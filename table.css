@@ -1,0 +1,159 @@
+.tableofContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toc-container {
+    width: 1192px;
+    height: 90vh; /* Allows full viewport scrolling */
+    overflow-y: auto;
+    padding: 20px 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important; 
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+
+/* Vertical line */
+.toc-line {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: 900px;
+    background: #ccc;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Table of contents row */
+.toc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/* Fading effect */
+.toc-row2 {
+    opacity: 0.3;
+}
+
+.toc-row2.active {
+    opacity: 1;
+}
+
+
+
+.tabButton {
+    background-color: #03712E;
+    color: white;
+    border: 0;
+    font-size: 14.58px;
+    padding: 17px 66px;
+    border-radius: 6px;
+    
+}
+
+.tabButton2 {
+    background-color: #0466D6;
+    color: white;
+    border: 0;
+    font-size: 14.58px;
+    padding: 17px 66px;
+    border-radius: 6px;
+}
+
+.tabButton22 {
+    background-color: #0466D6;
+    color: white;
+    border: 0;
+    font-size: 14.58px;
+    padding: 17px 66px;
+    border-radius: 6px;
+}
+
+
+
+.tabButton3 {
+    background-color: #C38C01;
+    color: white;
+    border: 0;
+    font-size: 14.58px;
+    padding: 17px 66px;
+    border-radius: 6px;
+}
+
+
+
+h7 {
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.toc-itemInfo {
+    font-size: 23px;
+    font-weight: 400;
+    font-family: var();
+}
+
+.toc-itemTopic {
+    font-size: 12.78px;
+    font-weight: 400;
+    margin: 0;
+    font-family: var();
+}
+
+.toc-item img {
+    width: 47px;
+    display: block;
+}
+
+
+/* stats starts here */
+
+.the-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing */
+    margin-bottom: 20px; /* Adjust for spacing */
+    background-color: #E6F3FE;
+    color: black;   
+    padding: 20px 35px;
+    border-radius: 5px;
+
+}
+
+.statsFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 100px; /* Adjust image size */
+    height: 120px;
+}
+.number {
+    font-size: 76px;
+    font-weight: 400;
+}
+.description {
+    font-size: 29.45px;
+    margin: 0;
+}

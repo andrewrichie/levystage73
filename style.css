@@ -1,0 +1,1296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-100: #0F0F0F;
+    --blue-primary: #008cff;
+    --green-primary: #03712e;
+    --yellow-primary: #fdb813;
+  
+
+    --fw-small: 400;
+    --fw-regular: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-very-bold: 800;
+
+
+    --ff-primary: "Inter", sans-serif;
+    --ff-basic: 'Nanotech LLC', sans-serif;
+    --ff-secondary:  "Commissioner", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    
+}
+
+
+
+/* @font-face {
+    font-family: 'NanoTech Regular', sans-serif;
+    src: url(Nanotech-LLC-1/NanoTech\ Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nanotech NormalItalic', sans-serif;
+    src: url(Nanotech-LLC-1/Nanotech\ NormalItalic.otf) format('opentype');
+    font-weight: normal;
+    font-style: italic;
+} */
+
+
+header img {
+    width: 100%;
+}
+
+h1{
+    background: linear-gradient(to right, #008CFF, #01AE38, #FDB813, #EF3731);
+    font-size: 71.26px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    background-size: 100%;
+    font-family: 'Nanotech NormalItalic', sans-serif;
+}
+
+.levyIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 104px;
+}
+
+.levyLogo {
+    width: 151.33px;
+    height: 45.8px;
+    margin-top: -300px;
+    margin-bottom: 160px;
+}
+
+h2 {
+    font-size: 71px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1;
+    letter-spacing: 0.0002em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: 400;
+    font-family: var(--ff-primary);
+    text-align: center;
+}
+
+.cta_startJourney {
+    background-color: var(--blue-primary);
+    color: white;
+    font-size: 30px;
+    padding: 22px 38px;
+    border-radius: 40px;
+    margin: 43px;
+    cursor: pointer;
+    margin-bottom: 104px;
+}
+
+.imgDeg {
+    width: 848px;
+    height: 651px;
+    margin-top: 144px;
+}
+
+
+/* .imgDeg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+} */
+
+.partSec {
+    margin-top: 144px;
+}
+
+.clientPartners {
+    font-size: 27.37px;
+    color: var(--primary-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientPartners_img {
+    margin-right: 37px;
+    margin-bottom: 210px;
+    
+}
+
+.analyticsContainer{
+    position: relative;
+    margin-bottom: 248px;
+}
+
+.analyticsBorder {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: #015BA4;
+    transform: rotate(2.5deg);
+}
+
+.analyticsUnleash {
+    position: relative;
+    background-color: var(--blue-primary);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analyticsUnleash img {
+    width: 460px;
+    height: 278px;
+    margin-top: -77px;
+}
+
+.analyticsUnleash p {
+    font-size: 44.22px;
+    color: white;
+}
+
+.effAnalytics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 47.30px;
+    text-align: center;
+}
+
+.industry {
+    margin-top: 500px;
+   
+}
+
+.indSer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    margin-bottom: -70px;
+}
+
+.industry div {
+    width: 100%;
+    height: 530px;
+}
+
+.industry div img {
+    width: 100%;
+    height: 100%;
+}
+
+.commonChallenge {
+    margin-top: 147px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 210px;
+}
+
+.comP {
+    font-size: 35px;
+    color: var(--primary-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.challengeData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.challengeData_info {
+    background-color: #f4f4f4;
+    border: 0.26px solid rgba(0, 0, 0,0.4);
+    max-width: 637px;
+    padding-top: 44px;
+    padding-left: 24px;
+    padding-right: 20px;
+    padding-bottom: 28px;
+    border-radius: 26px;
+}
+
+.challengeData_img {
+    width: 50px;
+}
+
+.challengeData_topic {
+    color: var(--blue-primary);
+    font-size: 30.16px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-family: var(--ff-basic);
+}
+
+.challengeData_text {
+    font-size: 23px;
+    color: #000000;
+    font-family: var(--ff-secondary);
+    letter-spacing: -0.5px;
+}
+
+.softwareUsed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.softwareUsed p {
+    font-size: 27.37px;
+    color: #0F0F0F;
+}
+
+.softwareUsed_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 120px;
+}
+
+.solutionsOffered {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solutionsOffered p {
+    font-size: 35px;
+    color: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+
+.scrollingWrapper {
+    background-image: url(levy\ img/green202.png);
+    width: 1485px;
+    height: 422.35px; 
+    display: flex;
+    gap: 22px;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 54px;
+    position: relative;
+}
+
+.check {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.dots {
+    position: absolute; 
+    bottom: 130px;
+    left: 750px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .dot.active {
+    background-color: black;
+  }
+
+.swiper-container {
+    width: 100%;
+    height: 1500px;
+}
+
+.swiper-slide {
+ 
+    text-align: center;
+    font-size: 18px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.swiper-pagination-bullet {
+    background-color: white !important;
+} 
+
+
+
+
+.profer_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15.64px;
+}
+
+.proferImg {
+    width: 50px;
+    height: 50px;
+}
+
+.profer_div p {
+    font-size: 25px;
+    font-family: var(--ff-basic);
+    color: white;
+}
+
+.proferEpower {
+    color: white;
+    font-family: var(--ff-secondary);
+    font-size: 25px;
+    margin-top: 22.51px;
+    
+}
+
+.green {
+    background-image: url('levy\ img/green202.png');
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 422px;  
+    
+}
+
+.greenJava {
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+ 
+
+.featuredWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.featuredWork :nth-child(1) {
+    color: #b10002;
+    font-size: 35px;
+}
+
+.featuredWork :nth-child(2) {
+    color: #0F0F0F;
+    font-size: 32px;
+    font-family: var(--ff-secondary);
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+
+.featuredWork :nth-child(3) {
+    color: #0F0F0F;
+    font-size: 32px;
+    font-family: var(--ff-secondary);
+}
+
+.pressFreedom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 73px;
+}
+
+.pressIndex {
+    width: 1334px;
+    height: 689px;
+    background-color: var(--blue-primary);
+    border: 35px solid #C1E3FF;
+    border-radius: 45px;
+}
+
+@media (max-width: 1300px) {
+    .pressIndex {
+        width: 1000px;
+        height: 550px;
+        padding: 34px 85px 65px 85px;
+    }
+
+    .pressIndex p {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media  (max-width: 992px) {
+    .pressIndex {
+        width: 800px;
+        height: 450px;
+    }
+}
+
+@media  (max-width: 768px) {
+    .pressIndex {
+        width: 650px;
+        height: 370px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pressIndex {
+        width: 530px;
+        height: 300px;
+        padding: 17px 30px 20px 30px;
+    }
+
+    .pressIndex p {
+        font-size: 18px;
+    }
+}
+
+.pressIndex {
+    padding: 47px 110px 80px 110px;
+}
+
+
+@media  (max-width: 768px) {
+    .pressIndex {
+        padding: 27px 50px 40px 50px;
+    }
+}
+
+
+
+.pressIndex p {
+    font-size: 37.5px;
+    margin-bottom: 42px;
+    color: white;
+}
+
+@media (max-width: 1300px) {
+    .pressIndex p {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+}
+
+.pressIndex_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+@media (max-width: 1300px) {
+   .pressIndex_img {
+    gap: 25px;
+   }
+
+}
+
+
+
+.pressIndex_img div {
+    width: 483px;
+    height: 371px;
+    border: 14px solid #d9d9d9;
+    border-radius: 30px;
+}
+
+@media (max-width: 1300px) {
+    .pressIndex_img div {
+        width: 390px;
+        height: 280px;
+    }
+}
+
+@media  (max-width: 992px) {
+    .pressIndex_img div {
+        width: 370px;
+        height: 220px;
+    }
+}
+
+@media  (max-width: 768px) {
+    .pressIndex_img div {
+        width: 350px;
+        height: 170px;
+    }
+} 
+
+@media (max-width: 576px) {
+    .pressIndex_img div {
+        width: 230px;
+        height: 120px;
+    }
+}
+
+
+.pressIndex_img div img {
+    width: 100%;
+    height: 100%;
+}
+
+.pressFreedom_cta {
+    display: flex;
+    font-size: 30px;
+    gap: 40px;
+    margin-top: 62px;
+    margin-bottom: 208px;
+}
+
+.pressFreedom_cta :nth-child(1) {
+    background-color: #00ad37;
+    padding: 22px 38px;
+    color: white;
+    border-radius: 40px;
+}
+
+.pressFreedom_cta :nth-child(2) {
+    border: 1px solid #0F0F0F;
+    padding: 22px 38px;
+    border-radius: 40px;
+}
+
+.majorCta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.majorCta p {
+    font-size: 59.35px;
+    color: #0F0F0F;
+    text-align: center;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    margin-bottom: 111px;
+    margin-top: 38px;
+}
+
+.ctaButtons :nth-child(1) {
+    background-color: #ffb400;
+    padding: 22px 28px;
+    border-radius: 40px;
+}
+
+.ctaButtons :nth-child(2) {
+    background-color: var(--blue-primary);
+    padding: 22px 38px;
+    border-radius: 40px;
+    color: white;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 675px;
+    border: 43px solid #037bde;
+    border-radius:  72px 72px 0 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBackground {
+    width: 100%;
+    display: flex;
+    z-index: -3;
+    position: absolute;
+    bottom: 0;
+}
+
+.footerBackground img {
+    width: 100%;
+    z-index: -90;
+}
+
+.footer_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 403px;
+}
+
+.levyFooter {
+    margin-top: -120px;
+}
+
+.levyfooter_img {
+    width: 295.65px;
+    height: 89.65px;
+    margin-bottom: 73px;
+}
+
+.levyFooter_info {
+    font-size: 25.81px;
+    color: #0F0F0F;
+    font-family: var(--ff-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.ress {
+    font-size: 15.4px;
+    color: var(--blue-primary);
+    font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+    .footer_column {
+        gap: 100px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .footer_column {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .levyFooter_info {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .levyFooter_info {
+        gap: 10px;
+        flex-direction: column-reverse;
+        font-size: 15px;
+    }
+}
+
+/* infostack footer */
+
+.info-stack
+
+.send-a-message {
+    font-size: 28.07px;
+    color: var(--blue-primary);
+    font-family: var(--ff-secondary);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+@media (max-width: 992px) {
+   .info-stack .send-a-message {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+input{
+    background-color: #9BCEF8;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 21px;
+    padding: 22px 22px 22px 22px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 537.95px;
+    height: 68px;
+    transition: border 0.3s, background-color 0.3s;
+    display: block;
+  }
+
+  @media (max-width: 992px) {
+    input {
+        font-size: 15px;
+        padding: 22px;
+        border-radius: 0.7rem;
+        margin-bottom: 0.7rem;
+        height: 48px;
+    }
+
+    input::placeholder {
+        font-size: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    input {
+        width: 480px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    input {
+        width: 380px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    input {
+        width: 250px;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+  }
+  
+  
+  input:focus {
+    border: 2px solid white;
+    box-shadow: 0 0 3px 2px var(--blue-primary);
+  }
+  
+  input::placeholder {
+    color: #536BA9;
+    font-family: var(--ff-basic);
+    font-size: 21px;
+  }
+
+  .text-area {
+    background-color: #9BCEF8;
+    height: 171px;
+    width: 537.95px;
+    border: none;
+    outline: none;
+    font-size: 21px;
+    padding: 22px 22px 22px 22px;
+    border-radius: 1rem;
+    margin-bottom: rem;
+    color: white;
+    transition: border 0.3s, background-color 0.3s;
+  }
+
+  @media (max-width: 992px) {
+    .text-area {
+        height: 141px;
+        
+    }
+  }
+
+  @media (max-width: 768px) {
+    .text-area {
+        width: 480px;
+        
+    }
+  }
+
+  @media (max-width: 576px) {
+    .text-area {
+        width: 380px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .text-area {
+        width: 250px;
+        font-size: 14px;
+        padding: 15px;
+    }
+  }
+  
+  .text-area:focus {
+    border: 2px solid var(--blue-primary);
+  }
+  
+  .text-area::placeholder {
+    color: #536BA9;
+    font-family: var(--ff-basic);
+  }
+
+  
+
+  .send-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+    font-size: 21.79px;
+    background-color: #008CFF;
+    width: 537.95px;
+    height: 82px;
+    border-radius: 18px;
+    margin-top: 18px;
+    border: 0;
+    padding: 20px 26px;
+  }
+
+  @media (max-width: 768px) {
+    .send-message {
+        font-size: 15px;
+        width: 480px;
+        height: 50px;
+        border-radius: 13px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .send-message {
+        font-size: 10px;
+        width: 380px;
+        height: 40px;
+        border-radius: 10px;
+    }
+  } 
+
+  @media (max-width: 480px) {
+    .send-message {
+        width: 250px;
+        
+
+    }
+  }
+  
+  
+  .input-icon {
+    width: 68px;
+    height: 45px;
+    margin-right: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .input-icon {
+        width: 40px;
+        height: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .input-icon {
+        width: 25px;
+        height: 20px;
+    }
+  }
+
+
+
+/* utility class */
+
+
+.container1 {
+    --max-width: 1930px;
+    --container-padding: 1rem;
+  
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+    margin-inline: auto;
+  } 
+  
+
+
+  .primary-clr {
+    color: var(--primary-100);
+  }
+  .blue-clr {
+    color: var(--blue-primary);
+  }
+  .green-clr {
+    color: var(--green-primary);
+  }
+  .yellow-clr {
+    color: var(--yellow-primary);
+  }
+  
+ 
+  .fw-small {
+    font-weight: var(--fw-small);
+  }
+  .fw-regular {
+    font-weight: var(--fw-regular);
+  }
+   .fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+  }
+   .fw-bold {
+    font-weight: var(--fw-bold);
+  }
+  .fw-very-bold {
+    font-weight: var(--fw-very-bold);
+  }
+
+
+  .ff-primary {
+    font-family: var(--ff-primary);
+  }
+  .ff-secondary {
+    font-family: var(--ff-secondary);
+  }
+  .ff-basic {
+    font-family: var(--ff-basic);
+  }
+
+
+
+
+
+  .swiper {
+    width: 1485px;
+    height: 600px;
+  }
+
+  .swiper-container {
+    width: 70%;
+    height: 300px;
+  
+}
+ 
+/* this is for the rotating blue border image */
+
+.image-stack-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-stack {
+    position: relative;
+    width: 848px;
+    height: 651px;
+    cursor: pointer;
+}
+
+.image-stack .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid;
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s, z-index 0.5s ease-in-out;
+    
+}
+
+
+.image-stack .front { z-index: 3; transform: rotate(0deg); }
+.image-stack .middle { z-index: 2; transform: rotate(0deg); }
+.image-stack .back { z-index: 1; transform: rotate(0deg); }
+
+
+.image-stack:hover .middle { transform: rotate(8deg); }
+.image-stack:hover .back { transform: rotate(18deg); }
+
+/* ends here */
+
+
+/* this is for the first blue slider */
+
+.custom-swiper {
+    position: relative;
+    width: 100%;
+    /* max-width: 1600px;  */
+    height: 530px;
+    overflow: hidden;
+}
+
+/* Stable Background */
+.swiper-bg {
+    position: absolute;
+    width: 100%;
+    height: 530px;
+    background-image: url('levy\ img/blue1.png'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    z-index: 0; /* Keeps it behind */
+}
+
+/* Swiper container */
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    z-index: 1; /* Content stays on top */
+}
+
+/* Slide layout */
+.swiper-slide {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left-side image */
+.slide-image {
+    width: 258px;
+    height: 272px;
+    max-height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Right-side text */
+.slide-text {
+    width: 40%;
+    color: white;
+    font-family: var(--ff-secondary);
+    text-align: left;
+    margin-left: 31px;
+}
+
+.slide-text :nth-child(1) {
+    font-size: 26.58px;
+    font-weight: 600;
+}
+
+.slide-text :nth-child(2) {
+    font-size: 27.14px;
+    font-weight: 400px;
+    margin-top: 13px;
+}
+
+/* ends here */
+
+/* then the reverse swiper starts here */
+
+/* Ensure this swiper has the same styling */
+.reverse-swiper {
+    position: relative;
+    width: 100%;
+    /* max-width: 800px; */
+    height: 530px;
+    overflow: hidden;
+}
+
+/* Background remains stable */
+.reverse-swiper .swiper-bg {
+    position: absolute;
+    width: 100%;
+    height: 530px;
+    background-image: url('levy\ img/blue2.png'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+/* Swiper container */
+.reverse-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-top: -70px;
+}
+
+/* Slide layout (Text left, Image right) */
+.reverse-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Image now on the right */
+.reverse-swiper .slide-image {
+    width: 258px;
+    height: 278px;
+    max-height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Text now on the left */
+.reverse-swiper .slide-text {
+    width: 40%;
+    font-family: var(--ff-secondary);
+    color: white;
+    margin-right: 31px;
+    text-align: right;
+}
+
+
+/* ends here */
+
+
+
+
+/* table of content begins here */
+
+
+.tableofContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toc-container {
+    width: 1292px;
+    height: 100vh; /* Allows full viewport scrolling */
+    overflow-y: auto;
+    padding: 20px 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important; 
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 100px;
+    column-gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    overflow: hidden;
+}
+
+/* Vertical line */
+.toc-line {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: 900px;
+    background: #ccc;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Table of contents row */
+.toc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/* Fading effect */
+.toc-row2 {
+    opacity: 0.3;
+}
+
+.toc-row2.active {
+    opacity: 1;
+}
+
+
+
+.tabButton {
+    background-color: #03712E;
+    color: white;
+    border: 0;
+    font-size: 14.58px;
+    padding: 17px 66px;
+    border-radius: 6px;
+    
+}
+
+.tabButton2 {
+    background-color: #0466D6;
+    color: white;
+    border: 0;
+    font-size: 14.58px;
+    padding: 17px 66px;
+    border-radius: 6px;
+}
+
+.tabButton22 {
+    background-color: #0466D6;
+    color: white;
+    border: 0;
+    font-size: 14.58px;
+    padding: 17px 66px;
+    border-radius: 6px;
+}
+
+
+
+.tabButton3 {
+    background-color: #C38C01;
+    color: white;
+    border: 0;
+    font-size: 14.58px;
+    padding: 17px 66px;
+    border-radius: 6px;
+}
+
+
+.tabButton33 {
+    background-color: #C38C01;
+    color: white;
+    border: 0;
+    font-size: 14.58px;
+    padding: 17px 66px;
+    border-radius: 6px;
+    margin-top: 27px;
+}
+
+
+h7 {
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.toc-itemInfo {
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.toc-itemTopic {
+    font-size: 12.78px;
+    font-weight: 400;
+    margin: 0;
+    
+}
+
+.toc-item img {
+    width: 47px;
+    display: block;
+}

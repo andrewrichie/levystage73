@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+   
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="table.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+
+
+    <div class="tableofContent ff-primary">
+        <div class="toc-container">
+            <!-- Vertical Line -->
+            <div class="toc-line"></div>
+    
+                <div class="toc-item toc-row2"> 
+                    <img src="levy img/auto.png">
+                    <h7>Automate Your Data</h7>
+                    <p class="toc-itemTopic">Transform data for self-service analytics.</p>
+                    
+                </div>
+                <div class="toc-item toc-row2"> 
+                    <h7>Data Architecture</h7>
+                    <p class="toc-itemInfo">
+                        Design datasets with trusted<br> patterns that balance performance<br> and accessibility.
+                    </p>
+                    <button type="button" class="tabButton">learn more</button>
+                </div>
+                <div class="toc-item toc-row2"> 
+                    <h7>Data Engineering</h7>
+                    <p class="toc-itemInfo">
+                        Automate your data workflows using<br> advanced processing tools that<br> leverage the full scalability of the cloud.
+                    </p>
+                    <button type="button" class="tabButton">learn more</button>
+                </div>
+
+    
+            <!-- Blue Row -->
+            
+                <div class="toc-item toc-row2">
+                    <img src="levy img/enable.png"> 
+                    <h7>Enable Data Culture</h7>
+                    <p class="toc-itemTopic">Empower teams with analytics.</p>
+                </div>
+                <div class="toc-item toc-row2"> 
+                    <h7>Data Strategy</h7>
+                    <p class="toc-itemInfo">
+                        We design and implement a data<br> analytics strategy and roadmap<br> for insights.
+                    </p>
+                    <button type="button" class="tabButton22">learn more</button>
+                </div>
+                <div class="toc-item toc-row2"> 
+                    <h7>Data Governance</h7>
+                    <p class="toc-itemInfo">
+                        Implement data quality frameworks and<br> security protocols tailored to<br> adhere to any regulatory or company standards.
+                    </p>
+                    <button type="button" class="tabButton2">learn more</button>
+                </div>
+            
+    
+            <!-- Yellow Row -->
+            
+                <div class="toc-item toc-row2">
+                    <img src="levy img/insight.png"> 
+                    <h7>Insight Generation</h7>
+                    <p class="toc-itemTopic">Drive impact with AI-driven insights.</p>
+                </div>
+                <div class="toc-item toc-row2"> 
+                    <h7>Data Science</h7>
+                    <p class="toc-itemInfo">
+                        Maximize your data value by<br> deriving information using trusted<br> machine learning models and<br> AI tools.
+                    </p>
+                    <button type="button" class="tabButton3">learn more</button>
+                </div>
+                <div class="toc-item toc-row2"> 
+                    <h7>Data Visualization</h7>
+                    <p class="toc-itemInfo">
+                        Translate data into insights<br> efficiently and effectively<br> driving business outcomes.
+                    </p>
+                    <button type="button" class="tabButton3">learn more</button>
+                </div>
+            
+        </div>
+    
+    </div>
+
+
+        <!-- Small div with an image, number, and text -->
+         <div class="the-stats">
+                    
+            <div class="stats">
+                <img src="levy img/image 25.png" alt="Icon" class="icon">
+                <div class="statsFlex">
+                    <div class="number" data-start="0" data-end="3">0+</div>
+                    <p class="description">Happy Clients</p>
+                </div>
+               
+            </div>
+
+            <div class="stats">
+                <img src="levy img/image (11).png" alt="Icon" class="icon">
+                <div class="statsFlex">
+                    <div class="number" data-start="220" data-end="225">220+</div>
+                    <p class="description">Dashboards Made</p>
+                </div>
+                
+            </div>
+
+            <div class="stats">
+                <img src="levy img/image (12).png" alt="Icon" class="icon">
+                <div class="statsFlex">
+                    <div class="number" data-start="20" data-end="25">20+</div>
+                    <p class="description">Data Viz Awards</p>
+                </div>
+         
+            </div>
+
+        
+         </div>
+
+
+
+
+
+    <script>
+        document=addEventListener('DOMContentLoaded', function() {
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: false
+                },
+                slidesPerView: 1,
+            
+            }); 
+        })
+
+
+
+            document.addEventListener("DOMContentLoaded", function() {
+        const rows = document.querySelectorAll(".toc-row2");
+
+        // Function to highlight the row in view
+        function updateActiveRow() {
+            let scrollPosition = window.scrollY + window.innerHeight / 2;
+
+            rows.forEach(row => {
+                const rect = row.getBoundingClientRect();
+                const rowTop = rect.top + window.scrollY;
+                const rowBottom = rowTop + rect.height;
+
+                if (scrollPosition >= rowTop && scrollPosition < rowBottom) {
+                    row.classList.add("active");
+                } else {
+                    row.classList.remove("active");
+                }
+            });
+        }
+
+        // Run on scroll
+        window.addEventListener("scroll", updateActiveRow);
+        updateActiveRow(); // Initialize on page load
+
+        // Click event to navigate to linked page
+        rows.forEach(row => {
+            row.addEventListener("click", function() {
+                const url = row.getAttribute("data-url");
+                if (url) {
+                    window.location.href = url;
+                }
+            });
+        });
+
+    });
+
+
+
+    window.addEventListener("scroll", function () {
+        let line = document.querySelector(".toc-line");
+        let scrollPosition = window.scrollY; // Current scroll position
+        let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        let scrollPercent = scrollPosition / maxScroll; // Scroll progress (0 to 1)
+
+        // Define color transitions
+        if (scrollPercent < 0.33) {
+        line.style.background = "#03712E"; // Top color
+        } else if (scrollPercent < 0.66) {
+        line.style.background = "#0466D6"; // Middle color
+        } else {
+        line.style.background = "#C38C01"; // Bottom color
+        }
+    });
+
+
+    function animateNumbers(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let numberElement = entry.target;
+                let start = parseInt(numberElement.getAttribute('data-start'));
+                let end = parseInt(numberElement.getAttribute('data-end'));
+                let duration = 3500;
+                let interval = 50;
+                let steps = duration / interval;
+                let increment = (end - start) / steps;
+                let currentValue = start;
+
+                let counter = setInterval(() => {
+                    currentValue += increment;
+                    if (currentValue >= end) {
+                        clearInterval(counter);
+                        currentValue = end;
+                    }
+                    numberElement.textContent = Math.floor(currentValue) + "+";
+                }, interval);
+
+                observer.unobserve(numberElement);
+            }
+        });
+    }
+
+    let observer = new IntersectionObserver(animateNumbers, { threshold: 0.5 });
+    document.querySelectorAll('.number').forEach(el => observer.observe(el));
+
+
+
+    
+    </script>
+</body>
+
+  
+</html>

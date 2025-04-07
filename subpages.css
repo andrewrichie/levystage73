@@ -1,0 +1,97 @@
+.dataArch {
+    margin-left: 180px;
+    margin-top: 71px;
+    margin-bottom: 95px;
+    font-family: var(--ff-primary);
+}
+
+.dataArch :nth-child(1) {
+    color: var(--green-primary);
+    font-size: 46.6px;
+    font-weight: 700;
+}
+
+.dataArch :nth-child(2) {
+    font-size: 26px;
+    
+}
+
+.dataArch_grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 87px;
+    max-width: 1720px;
+}
+
+.archGrid {
+    display: flex;
+    
+}
+
+.archNum_a {
+    background-color: #EF3731;
+    color: white;
+    font-size: 34.28px;
+    font-weight: 700;
+    font-family: var(--ff-primary);
+    border-radius: 15.28px;
+    width: 150px;
+    padding-left: 13px;
+    padding-top: 31px;
+}
+
+.archNum_b {
+    background-color: #FDB813;
+    color: white;
+    font-size: 34.28px;
+    font-weight: 700;
+    font-family: var(--ff-primary);
+    border-radius: 15.28px;
+    width: 150px;
+    padding-left: 13px;
+    padding-top: 31px;
+}
+
+.archNum_c {
+    background-color: #11ab4b;
+    color: white;
+    font-size: 34.28px;
+    font-weight: 700;
+    font-family: var(--ff-primary);
+    border-radius: 15.28px;
+    width: 150px;
+    padding-left: 13px;
+    padding-top: 31px;
+}
+
+.archGrid_info {
+    background-color: #F5F7F8;
+    border: 0.7px solid black;
+    border-radius: 15.28px;
+    margin-left: -70px;
+    width: 332px;
+    height: 707px;
+    padding: 34px 34px 24px 28px;
+}
+
+.archGrid_info img {
+    width: 46px;
+    height: 46px;
+}
+
+.archGird_topic {
+    font-size: 34.28px;
+    font-weight: 700;
+    font-family: var(--ff-primary);
+    margin-bottom: 17px;
+
+}
+
+.archGird_sol {
+    font-size: 18.28px;
+    font-weight: 400;
+    font-family: var(--ff-secondary);
+    margin-top: 10px;
+}
