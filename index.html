@@ -9,24 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/nanotech-llc" rel="stylesheet">
+    <!-- <link href="https://fonts.cdnfonts.com/css/nanotech-llc" rel="stylesheet"> -->
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+        <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
 
     <header>
-        <img src="levy img/high_empyrean_this_image_shows_an_interesting_abstract_art_desi_0efd0bd4-ef4e-446a-9b5d-d1f654000006 1.png">
-        
+        <img class="bigImg" src="levy img/high_empyrean_this_image_shows_an_interesting_abstract_art_desi_0efd0bd4-ef4e-446a-9b5d-d1f654000006 1.png">
+        <img class="levyLogo" src="levy img/Group 1000002904.png" >
     </header>
 
     <section class="levyIntro">
-        <img class="levyLogo" src="levy img/Group 1000002904.png" >
+        
         <h1 class="ff-basic">Levy Analytics</h1>
         <h2 class="ff-basic">Unleash the Power <br>of Your Data</h2>
         <h3>
@@ -42,9 +47,9 @@
     
     <div class="image-stack-container">
         <div class="image-stack">
-            <img src="levy img/Group 13.png" class="image front" data-index="1" style="border-color: blue;">
-            <img src="levy img/air bnb1.png" class="image middle" data-index="2" style="border-color: red;">
-            <img src="levy img/air bnb2.png" class="image back" data-index="3" style="border-color: green;">
+            <img src="levy img/Group 13.png" class="image front" data-index="1" style="border: none;">
+            <img src="levy img/air bnb1.png" class="image middle" data-index="2" style="border: none;">
+            <img src="levy img/air bnb2.png" class="image back" data-index="3" style="border: none;">
         </div>
     
     </div>
@@ -57,18 +62,32 @@
                 Our Clients & Technology Partners
         </p>
 
-        <div>
-            <img class="clientPartners_img" src="levy img/image 3.png" >
-            <img class="clientPartners_img" src="levy img/image 4.png" >
-            <img class="clientPartners_img" src="levy img/image 5.png" >
-            <img class="clientPartners_img" src="levy img/image 6.png" >
-            <img class="clientPartners_img" src="levy img/image 7.png" >
-            <img class="clientPartners_img" src="levy img/image 8.png" >
-            <img class="clientPartners_img" src="levy img/image 9.png" >
-            <img class="clientPartners_img" src="levy img/image 10.png" >
-            <img class="clientPartners_img" src="levy img/image 11.png" >
-            <img class="clientPartners_img" src="levy img/image 12.png" >
+        <div class="scroll-imgdiv">
+            <div class="scroll-img">
+                <img class="clientPartners_img" src="levy img/image 3.png" >
+                <img class="clientPartners_img" src="levy img/image 4.png" >
+                <img class="clientPartners_img" src="levy img/image 5.png" >
+                <img class="clientPartners_img" src="levy img/image 6.png" >
+                <img class="clientPartners_img" src="levy img/image 7.png" >
+                <img class="clientPartners_img" src="levy img/image 8.png" >
+                <img class="clientPartners_img" src="levy img/image 9.png" >
+                <img class="clientPartners_img" src="levy img/image 10.png" >
+                <img class="clientPartners_img" src="levy img/image 11.png" >
+                <img class="clientPartners_img" src="levy img/image 12.png" >
+
+                <img class="clientPartners_img" src="levy img/image 3.png" >
+                <img class="clientPartners_img" src="levy img/image 4.png" >
+                <img class="clientPartners_img" src="levy img/image 5.png" >
+                <img class="clientPartners_img" src="levy img/image 6.png" >
+                <img class="clientPartners_img" src="levy img/image 7.png" >
+                <img class="clientPartners_img" src="levy img/image 8.png" >
+                <img class="clientPartners_img" src="levy img/image 9.png" >
+                <img class="clientPartners_img" src="levy img/image 10.png" >
+                <img class="clientPartners_img" src="levy img/image 11.png" >
+                <img class="clientPartners_img" src="levy img/image 12.png" >
+            </div>
         </div>
+       
         
     </section>
 
@@ -90,85 +109,82 @@
 
 
     
-
     <div class="tableofContent ff-primary container1">
+        <!-- Vertical Line moved outside scroll container -->
+        <div class="toc-line"></div>
+      
         <div class="toc-container">
-            <!-- Vertical Line -->
-            <div class="toc-line"></div>
-    
-                <div class="toc-item toc-row2"> 
-                    <img src="levy img/auto.png">
-                    <h7>Automate Your Data</h7>
-                    <p class="toc-itemTopic">Transform data for self-service analytics.</p>
-                    
-                </div>
-                <div class="toc-item toc-row2"> 
-                    <h7>Data Architecture</h7>
-                    <p class="toc-itemInfo">
-                        Design datasets with trusted<br> patterns that balance performance<br> and accessibility.
-                    </p>
-                    <button type="button" class="tabButton">learn more</button>
-                </div>
-                <div class="toc-item toc-row2"> 
-                    <h7>Data Engineering</h7>
-                    <p class="toc-itemInfo">
-                        Automate your data workflows using<br> advanced processing tools that<br> leverage the full scalability of the cloud.
-                    </p>
-                    <button type="button" class="tabButton">learn more</button>
-                </div>
-
-    
-            <!-- Blue Row -->
-            
-                <div class="toc-item toc-row2">
-                    <img src="levy img/enable.png"> 
-                    <h7>Enable Data Culture</h7>
-                    <p class="toc-itemTopic">Empower teams with analytics.</p>
-                </div>
-                <div class="toc-item toc-row2"> 
-                    <h7>Data Strategy</h7>
-                    <p class="toc-itemInfo">
-                        We design and implement a data<br> analytics strategy and roadmap<br> for insights.
-                    </p>
-                    <button type="button" class="tabButton22">learn more</button>
-                </div>
-                <div class="toc-item toc-row2"> 
-                    <h7>Data Governance</h7>
-                    <p class="toc-itemInfo">
-                        Implement data quality frameworks and<br> security protocols tailored to<br> adhere to any regulatory or company standards.
-                    </p>
-                    <button type="button" class="tabButton2">learn more</button>
-                </div>
-            
-    
-            <!-- Yellow Row -->
-            
-                <div class="toc-item toc-row2">
-                    <img src="levy img/insight.png"> 
-                    <h7>Insight Generation</h7>
-                    <p class="toc-itemTopic">Drive impact with AI-driven insights.</p>
-                </div>
-                <div class="toc-item toc-row2"> 
-                    <h7>Data Science</h7>
-                    <p class="toc-itemInfo">
-                        Maximize your data value by<br> deriving information using trusted<br> machine learning models and<br> AI tools.
-                    </p>
-                    <button type="button" class="tabButton3">learn more</button>
-                </div>
-                <div class="toc-item toc-row2"> 
-                    <h7>Data Visualization</h7>
-                    <p class="toc-itemInfo">
-                        Translate data into insights<br> efficiently and effectively<br> driving business outcomes.
-                    </p>
-                    <button type="button" class="tabButton33">learn more</button>
-                </div>
-            
+          <!-- SECTION 1 -->
+          <div class="toc-section">
+            <div class="toc-item toc-row2">
+              <img src="levy img/auto.png">
+              <h7>Automate Your Data</h7>
+              <p class="toc-itemTopic">Transform data for self-service analytics.</p>
+            </div>
+            <div class="toc-item toc-row2">
+              <h7>Data Architecture</h7>
+              <p class="toc-itemInfo">
+                Design datasets with trusted<br> patterns that balance performance<br> and accessibility.
+              </p>
+              <button class="tabButton"><a href="automatedata.html">learn more</a></button>
+            </div>
+            <div class="toc-item toc-row2">
+              <h7>Data Engineering</h7>
+              <p class="toc-itemInfo">
+                Automate your data workflows using<br> advanced processing tools that<br> leverage the full scalability of the cloud.
+              </p>
+              <button class="tabButton"><a href="automatedata.html">learn more</a></button>
+            </div>
+          </div>
+      
+          <!-- SECTION 2 -->
+          <div class="toc-section">
+            <div class="toc-item toc-row2">
+              <img src="levy img/enable.png">
+              <h7>Enable Data Culture</h7>
+              <p class="toc-itemTopic">Empower teams with analytics.</p>
+            </div>
+            <div class="toc-item toc-row2">
+              <h7>Data Strategy</h7>
+              <p class="toc-itemInfo">
+                We design and implement a data<br> analytics strategy and roadmap<br> for insights.
+              </p>
+              <button class="tabButton22"><a href="enableculture.html">learn more</a></button>
+            </div>
+            <div class="toc-item toc-row2">
+              <h7>Data Governance</h7>
+              <p class="toc-itemInfo">
+                Implement data quality frameworks and<br> security protocols tailored to<br> adhere to any regulatory or company standards.
+              </p>
+              <button class="tabButton2"><a href="enableculture.html">learn more</a></button>
+            </div>
+          </div>
+      
+          <!-- SECTION 3 -->
+          <div class="toc-section">
+            <div class="toc-item toc-row2">
+              <img src="levy img/insight.png">
+              <h7>Insight Generation</h7>
+              <p class="toc-itemTopic">Drive impact with AI-driven insights.</p>
+            </div>
+            <div class="toc-item toc-row2">
+              <h7>Data Science</h7>
+              <p class="toc-itemInfo">
+                Maximize your data value by<br> deriving information using trusted<br> machine learning models and<br> AI tools.
+              </p>
+              <button class="tabButton3"><a href="insigtgen.html">learn more</a></button>
+            </div>
+            <div class="toc-item toc-row2">
+              <h7>Data Visualization</h7>
+              <p class="toc-itemInfo">
+                Translate data into insights<br> efficiently and effectively<br> driving business outcomes.
+              </p>
+              <button class="tabButton33"><a href="insigtgen.html">learn more</a></button>
+            </div>
+          </div>
         </div>
-    
-    </div>
-
-  
-
+      </div>
+      
 
 
 
@@ -184,7 +200,7 @@
                 <div class="swiper-slide">
                     <img src="levy img/image (10).png" class="slide-image">
                     <div class="slide-text">
-                        <p>Food Service</p>
+                        <p>FOOD SERVICE</p>
                         <p>
                             We help the food service industry by optimizing menus, reducing waste, and enhancing customer experiences. Through insights into inventory, customer preferences, and operations, businesses can streamline workflows, improve marketing, and identify growth opportunities. This data-driven approach increases efficiency, profitability, and competitiveness.
                         </p>
@@ -222,7 +238,7 @@
     </div>
 
 
-    <div class="custom-swiper reverse-swiper">
+    <div class="custom-swiper reverse-swiper container1">
         <div class="swiper-bg"></div> <!-- Stable Background -->
         <div class="swiper-container reverse-container">
             <div class="swiper-wrapper">
@@ -307,7 +323,7 @@
     </section>
 
     <section class="softwareUsed">
-        <p class="ff-basic">software we use</p>
+        <p class="ff-basic">Software We Use</p>
         <div class="softwareUsed_group">
             <img src="levy img/image 21.png">
             <img src="levy img/image (5).png">
@@ -325,61 +341,55 @@
 
     <div class="green">
 
-    
-    
-        <div class="greenJava">
-
-                
-            <div class="swiper-container swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="profer_div">
-                            <img class="proferImg" src="levy img/ladder.png">
-                            <p>Data-Driven Strategy <br>and Decision-Making</p>
-                        </div>
-                        
-                        <p class="proferEpower">
-                                We empower businesses with data-driven strategies that transform raw<br> data into actionable insights. Our advanced analytics ensure informed,<br> strategic decisions, helping companies seize opportunities, mitigate<br> risks, and confidently achieve their goals.
-                        </p> 
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="profer_div">
-                            <img class="proferImg" src="levy img/ladder.png">
-                            <p>Data-Driven Strategy <br>and Decision-Making</p>
-                        </div>
-                        
-                        <p class="proferEpower">
-                                We empower businesses with data-driven strategies that transform raw<br> data into actionable insights. Our advanced analytics ensure informed,<br> strategic decisions, helping companies seize opportunities, mitigate<br> risks, and confidently achieve their goals.
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="profer_div">
-                            <img class="proferImg" src="levy img/ladder.png">
-                            <p>Data-Driven Strategy <br>and Decision-Making</p>
-                        </div>
-                        
-                        <p class="proferEpower">
-                                We empower businesses with data-driven strategies that transform raw<br> data into actionable insights. Our advanced analytics ensure informed,<br> strategic decisions, helping companies seize opportunities, mitigate<br> risks, and confidently achieve their goals.
-                        </p> 
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="profer_div">
-                            <img class="proferImg" src="levy img/ladder.png">
-                            <p>Data-Driven Strategy <br>and Decision-Making</p>
-                        </div>
-                        
-                        <p class="proferEpower">
-                                We empower businesses with data-driven strategies that transform raw<br> data into actionable insights. Our advanced analytics ensure informed,<br> strategic decisions, helping companies seize opportunities, mitigate<br> risks, and confidently achieve their goals.
-                        </p> 
-                    </div>
+                <!-- Swiper container -->
+        <div class="rare-swiper-container">
+            <div class="rare-swiper-wrapper">
+            <div class="rare-swiper-slide">
+                <div class="rare-top-content">
+                <img src="levy img/ladder.png" class="rare-image" />
+                <p class="rare-topic">Data-Driven Strategy <br> and Decision-Making</p>
                 </div>
-                <div class="swiper-pagination"></div>
-              
+                <p class="rare-description">
+                We empower businesses with data-driven strategies that transform raw data into actionable insights. Our advanced analytics ensure informed, strategic decisions, helping companies seize opportunities, mitigate risks, and confidently achieve their goals.
+                </p>
             </div>
-    
-                
+        
+            <!-- Repeat for other slides -->
+            <div class="rare-swiper-slide">
+                <div class="rare-top-content">
+                <img src="levy img/ladder.png" class="rare-image" />
+                <p class="rare-topic">Lower Operating Costs<br> and Business Risks</p>
+                </div>
+                <p class="rare-description">
+                    At Levy Analytics Group, we help clients cut costs and mitigate risks with efficient data management. Our approach reduces waste, optimizes resources, and identifies risks early, empowering businesses to make cost-effective decisions and stay competitive.
+                </p>
+            </div>
+        
+            <div class="rare-swiper-slide">
+                <div class="rare-top-content">
+                <img src="levy img/ladder.png" class="rare-image" />
+                <p class="rare-topic">Streamlined Productivity<br> and Resourcing</p>
+                </div>
+                <p class="rare-description">
+                    As a company, we streamline productivity by optimizing data workflows and automating routine processes. Our solutions reduce inefficiencies, improve resource allocation, and enable companies to focus on strategic initiatives that drive success.
+                </p>
+            </div>
+        
+            <div class="rare-swiper-slide">
+                <div class="rare-top-content">
+                <img src="levy img/ladder.png" class="rare-image" />
+                <p class="rare-topic">Clear Growth and<br> Performance Metrics</p>
+                </div>
+                <p class="rare-description">
+                    We deliver real-time growth and performance metrics through comprehensive analytics, providing businesses with clear insights to track progress, make data-driven adjustments, and set realistic goals for sustained success.
+                </p>
+            </div>
+            </div>
+        
+            <!-- Pagination -->
+            <div class="rare-swiper-pagination"></div>
         </div>
-    
+        
 
     </div>
     
@@ -396,7 +406,7 @@
             At Levy Analytics Group, we excel in<br> delivering award-winning analytics<br> solutions across various industries.
         </p>
         <p>
-            In our portfolio, you will see over 50 dashboards with 13<br> being selected as Tableau “Viz of the Day” demonstrating<br> excellence in data storytelling. Our solutions span across<br> industries such as healthcare, transportation, hospitality,<br> e-commerce, and more.
+            In our portfolio, you will see over <span class="bold">50 dashboards</span>  with <span class="bold">13<br> being selected as Tableau “Viz of the Day”</span> demonstrating<br> excellence in data storytelling. Our solutions span across<br> industries such as <span class="bold">healthcare, transportation, hospitality,<br> e-commerce, and more.</span>
         </p>
     </section>
 
@@ -516,8 +526,6 @@
             
             }); 
         })
-
-
 
     
     </script>

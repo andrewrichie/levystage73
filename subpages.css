@@ -1,6 +1,12 @@
+.levy_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dataArch {
     margin-left: 180px;
-    margin-top: 71px;
+    margin-top: 167px;
     margin-bottom: 95px;
     font-family: var(--ff-primary);
 }

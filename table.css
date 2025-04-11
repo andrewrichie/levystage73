@@ -1,121 +1,204 @@
+/* Table of Contents Container */
 .tableofContent {
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.toc-container {
-    width: 1192px;
-    height: 90vh; /* Allows full viewport scrolling */
-    overflow-y: auto;
-    padding: 20px 0;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) !important; 
-    grid-template-rows: repeat(3, 1fr);
-    margin-top: 400px;
-    margin-bottom: 400px;
-}
-
-/* Vertical line */
-.toc-line {
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  /* Vertical Line */
+  .toc-line {
     position: absolute;
-    left: 30%;
+    left: 35%; /* Fixed position of line at 35% from the left */
     top: 0;
     bottom: 0;
     width: 1px;
-    height: 900px;
     background: #ccc;
-    transition: background 0.5s ease-in-out;
-}
-
-/* Table of contents row */
-.toc-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: opacity 0.3s ease-in-out;
+    z-index: 0;
+  }
+  
+  /* Scrollable Container */
+  .toc-container {
     position: relative;
-    margin-bottom: 100px;
-}
-
-/* Fading effect */
-.toc-row2 {
-    opacity: 0.3;
-}
-
-.toc-row2.active {
+    width: 1292px; /* Max width as original */
+    max-width: 100%; /* Make it responsive within container */
+    height: 30vh; /* Set initial height to 30vh */
+    max-height: 60vh; /* Maximum height stays as it was */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+  }
+  
+  .toc-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on Chrome/Safari */
+  }
+  
+  /* Sections inside the container */
+  .toc-section {
+    scroll-snap-align: start;
+    height: 10vh; /* Default height on larger screens */
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 30px; /* Reduced gap between rows */
+    column-gap: 30px; /* Adjust gap */
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Make sure opacity remains 1 (fully visible) */
+  .toc-row2 {
     opacity: 1;
-}
-
-
-
-.tabButton {
-    background-color: #03712E;
+  }
+  
+  /* Buttons */
+  .tabButton,
+  .tabButton2,
+  .tabButton22,
+  .tabButton3,
+  .tabButton33 {
     color: white;
     border: 0;
     font-size: 14.58px;
     padding: 17px 66px;
     border-radius: 6px;
-    
-}
-
-.tabButton2 {
-    background-color: #0466D6;
+    background-color: #03712E; /* Default green */
+  }
+  
+  /* Specific background colors */
+  .tabButton { background-color: #03712E; }
+  .tabButton2, .tabButton22 { background-color: #0466D6; }
+  .tabButton3, .tabButton33 { background-color: #C38C01; }
+  .tabButton33 { margin-top: 27px; }
+  
+  /* Learn More link style */
+  .tabButton a,
+  .tabButton2 a,
+  .tabButton22 a,
+  .tabButton3 a,
+  .tabButton33 a {
     color: white;
-    border: 0;
-    font-size: 14.58px;
-    padding: 17px 66px;
-    border-radius: 6px;
-}
-
-.tabButton22 {
-    background-color: #0466D6;
-    color: white;
-    border: 0;
-    font-size: 14.58px;
-    padding: 17px 66px;
-    border-radius: 6px;
-}
-
-
-
-.tabButton3 {
-    background-color: #C38C01;
-    color: white;
-    border: 0;
-    font-size: 14.58px;
-    padding: 17px 66px;
-    border-radius: 6px;
-}
-
-
-
-h7 {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Headings & Text */
+  h7 {
     font-size: 31px;
     font-weight: 700;
-}
-
-.toc-itemInfo {
+  }
+  
+  .toc-itemInfo {
     font-size: 23px;
     font-weight: 400;
-    font-family: var();
-}
-
-.toc-itemTopic {
+    letter-spacing: -1px;
+    white-space: nowrap;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .toc-itemTopic {
     font-size: 12.78px;
     font-weight: 400;
     margin: 0;
-    font-family: var();
-}
-
-.toc-item img {
+  }
+  
+  .toc-item img {
     width: 47px;
     display: block;
-}
-
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 1200px) {
+    /* Adjust layout for medium screens */
+    .toc-container {
+      height: 45vh; /* Reduce height on larger screens */
+      max-height: 75vh; /* Allow it to grow but stay controlled */
+    }
+  
+    .toc-section {
+      grid-template-columns: repeat(3, 1fr); /* 2 columns instead of 3 */
+      row-gap: 30px; /* Reduced gap */
+      column-gap: 20px; /* Reduced gap */
+    }
+  
+    h7 {
+      font-size: 28px; /* Smaller font size */
+    }
+  
+    .toc-itemInfo {
+      font-size: 20px; /* Smaller text for better fit */
+    }
+  
+    .tabButton, .tabButton2, .tabButton22, .tabButton3, .tabButton33 {
+      font-size: 12px; /* Smaller buttons */
+      padding: 12px 50px; /* Reduced padding for buttons */
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Adjust layout for smaller screens (tablets, small laptops) */
+    .toc-container {
+      height: 50vh; /* Reduce container height */
+      max-height: 80vh; /* Allow it to be flexible on smaller screens */
+    }
+  
+    .toc-section {
+      grid-template-columns: repeat(3, 1fr); /* 2 columns instead of 3 */
+      row-gap: 10px; /* Smaller row gap for compact look */
+      column-gap: 10px; /* Adjust column gap */
+    }
+  
+    h7 {
+      font-size: 25px; /* Further reduced font size */
+    }
+  
+    .toc-itemInfo {
+      font-size: 18px; /* Smaller text */
+    }
+  
+    .tabButton, .tabButton2, .tabButton22, .tabButton3, .tabButton33 {
+      font-size: 12px; /* Smaller buttons */
+      padding: 12px 50px; /* Reduced padding for buttons */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Adjust layout for mobile screens */
+    .toc-container {
+      height: 60vh; /* Even more flexible on mobile */
+      max-height: 90vh; /* Allow it to take up more screen space */
+    }
+  
+    .toc-section {
+      grid-template-columns: 1fr; /* Single column layout */
+      row-gap: 15px; /* Smaller row gap */
+      column-gap: 10px; /* Adjust for mobile screens */
+    }
+  
+    h7 {
+      font-size: 22px; /* Smaller font size */
+    }
+  
+    .toc-itemInfo {
+      font-size: 16px; /* Adjust text size */
+    }
+  
+    .tabButton, .tabButton2, .tabButton22, .tabButton3, .tabButton33 {
+      font-size: 10px; /* Even smaller buttons */
+      padding: 10px 30px; /* Smaller padding */
+    }
+  }
+  
 
 /* stats starts here */
 
@@ -157,3 +240,5 @@ h7 {
     font-size: 29.45px;
     margin: 0;
 }
+
+
