@@ -23,8 +23,7 @@ function goToSlide(index) {
         dot.classList.remove("active");
       }
     });
-  }
-
+  
 
   
 

@@ -14,12 +14,13 @@
 <body>
     <div class="aboutheaddiv">
         <img class="headbackground" src="levy img/Mask group (1).png">
+        <p class="aboutHead ff-basic">About Us</p>
     </div>
     
 
-    <p class="aboutHead ff-basic">About Us</p>
+   
 
-    <section class="whyLevy">
+    <section class="whyLevy container">
         <p>Why Levy<br> Analytics Group?</p>
 
         <p>
@@ -31,7 +32,7 @@
         </p>
     </section>
 
-    <section class="leadSec">
+    <section class="leadSec container">
         <p class="lead">Leadership</p>
         <div  class="leaddiv">
             <div class="leaddiv2">
@@ -64,7 +65,7 @@
 
     </section>
 
-    <section class="offshoreTeam">
+    <section class="offshoreTeam container">
         <p class="offTeam">Offshore Team</p>
         <div class="teamGrid">
             <div class="teamInfo">
@@ -159,7 +160,7 @@
         <div class="the-stats">
                     
             <div class="stats">
-                <img src="levy img/image 25.png" alt="Icon" class="icon">
+                <img src="levy img/image 25.png" alt="Icon1" class="icon1">
                 <div class="statsFlex">
                     <div class="number ff-basic" data-start="0" data-end="3">0+</div>
                     <p class="description">Happy Clients</p>
@@ -168,18 +169,18 @@
             </div>
 
             <div class="stats">
-                <img src="levy img/image (11).png" alt="Icon" class="icon">
+                <img src="levy img/image (11).png" alt="Icon2" class="icon2">
                 <div class="statsFlex">
-                    <div class="number ff-basic" data-start="220" data-end="225">220+</div>
+                    <div class="number ff-basic" data-start="0" data-end="225">220+</div>
                     <p class="description">Dashboards Made</p>
                 </div>
                 
             </div>
 
             <div class="stats">
-                <img src="levy img/image (12).png" alt="Icon" class="icon">
+                <img src="levy img/image (12).png" alt="Icon3" class="icon3">
                 <div class="statsFlex">
-                    <div class="number ff-basic" data-start="20" data-end="25">20+</div>
+                    <div class="number ff-basic" data-start="0" data-end="25">20+</div>
                     <p class="description">Data Viz Awards</p>
                 </div>
          
@@ -192,7 +193,7 @@
 
 
     
-    <footer>
+    <footer class="container1">
 
         <div class="footer_column">
             <div class="levyFooter">
@@ -263,7 +264,7 @@
                     let numberElement = entry.target;
                     let start = parseInt(numberElement.getAttribute('data-start'));
                     let end = parseInt(numberElement.getAttribute('data-end'));
-                    let duration = 2500;
+                    let duration = 1500;
                     let interval = 50;
                     let steps = duration / interval;
                     let increment = (end - start) / steps;

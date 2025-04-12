@@ -1,14 +1,16 @@
 .aboutheaddiv {
     width: 100%;
+    position: relative;
 }
 
 .headbackground {
     /* margin-bottom: 124px; */
-    position: relative;
+    
     width: 100%;
 }
 
 .aboutHead {
+    position: absolute;
     color: var(--green-primary);
     font-size: 71.26px;
     display: flex;
@@ -23,8 +25,7 @@
 
 .whyLevy {
     margin-top: 124px;
-    max-width: 1730px;
-    margin-left: 202px;
+    
 }
 
 .whyLevy :nth-child(1) {
@@ -48,7 +49,7 @@
 }
 
 .leadSec {
-    margin-left: 202px;
+    
 }
 
 .lead {
@@ -99,8 +100,9 @@
 }
 
 .offshoreTeam {
-    margin-left: 202px;
+    
     margin-top: 201px;
+    max-width: 1980px;
 }
 
 .offTeam {
@@ -182,8 +184,8 @@
     background-color: #E6F3FE;
     color: black;   
     padding: 20px 35px;
-    border-radius: 5px;
-
+    border-radius: 16px;
+    height: 180px;
 }
 
 .statsFlex {
@@ -191,10 +193,24 @@
     flex-direction: column;
 }
 
-.icon {
-    width: 100px; /* Adjust image size */
-    height: 120px;
+.icon1 {
+    width: 138px; /* Adjust image size */
+    height: 138px;
+    margin-right: 24px;
 }
+
+.icon2 {
+    width: 112px; /* Adjust image size */
+    height: 112px;
+    margin-right: 40px;
+}
+
+.icon3 {
+    width: 94px; /* Adjust image size */
+    height: 138px;
+    margin-right: 33px;
+}
+
 .number {
     font-size: 76px;
     font-weight: 400;
