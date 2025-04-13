@@ -71,6 +71,90 @@ header {
    
 }
 
+/* navigation key starts here */
+
+
+/* Container *//* Container */
+.nav-container {
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    z-index: 1000;
+    overflow: visible; /* prevent clipping */
+  }
+  
+  /* Hamburger Button */
+  .hamburger {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1100;
+
+  }
+  
+  /* Hamburger Bars */
+  .hamburger span {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    transform-origin: center;
+  }
+  
+  /* Active (cross/cancel icon) */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  
+  /* Nav Menu */
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--blue-primary);
+    padding: 10px 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-menu ul {
+    font-size: 34px;
+    list-style: none;
+    padding: 50px;
+  }
+
+  .nav-menu ul li {
+    margin-bottom: 40px;
+  }
+
+  .nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--ff-basic);
+  }
+  
+  .nav-menu.show {
+    display: flex;
+  }
+
+
+/* nav key ends here */
+
 h1{
     background: linear-gradient(to right, #008CFF, #01AE38, #FDB813, #EF3731);
     font-size: 71.26px;
@@ -493,6 +577,48 @@ h3 {
     letter-spacing: -0.5px;
 }
 
+@media (max-width: 1300px) {
+    .challengeData {
+        padding: 20px;
+    }
+
+    .challengeData_info {
+        padding-top: 30px;
+        padding-left: 18px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .challengeData {
+        grid-template-columns: 1fr;
+    }
+
+    .comP {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .challengeData_topic {
+        font-size: 24px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .challengeData_text {
+        font-size: 18px;
+    }
+
+    .comP {
+        font-size: 24px;
+    }
+
+}
+
+
+
 .softwareUsed {
     display: flex;
     justify-content: center;
@@ -513,6 +639,19 @@ h3 {
     margin-bottom: 120px;
 }
 
+@media (max-width: 992px) {
+    .softwareUsed_group {
+        gap: 30px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .softwareUsed_group img {
+        width: 40px;
+    }
+}
+
 .solutionsOffered {
 
     display: flex;
@@ -531,47 +670,6 @@ h3 {
 }
 
 
-.scrollingWrapper {
-    background-image: url(levy\ img/green202.png);
-    width: 1485px;
-    height: 422.35px; 
-    display: flex;
-    gap: 22px;
-    /* align-items: center; */
-    justify-content: center;
-    padding-top: 54px;
-    position: relative;
-}
-
-.check {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-}
-
-.dots {
-    position: absolute; 
-    bottom: 130px;
-    left: 750px;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    cursor: pointer;
-    z-index: 10;
-  }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 0.5;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .dot.active {
-    background-color: black;
-  }
 
 .swiper-container {
     width: 100%;
@@ -623,6 +721,8 @@ h3 {
     
 }
 
+/* the green background java starts here */
+
 .green {
     background-image: url('levy\ img/green202.png');
     background-size: auto;
@@ -632,6 +732,12 @@ h3 {
     
 }
 
+@media (max-width: 1300px) {
+    .green {
+        padding: 20px;
+    }
+}
+
 .greenJava {
     
     display: flex;
@@ -639,6 +745,139 @@ h3 {
 }
 
 
+
+
+  /* green java */
+
+  .rare-swiper-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .rare-swiper-wrapper {
+    display: flex;
+  }
+  
+  .rare-swiper-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 60px 20px 20px 20px;
+  }
+  
+  .rare-top-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  .rare-image {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .rare-topic {
+    font-size: 25px;
+    color: white;
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    text-align: center;
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  .rare-description {
+    font-size: 25px;
+    color: white;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  .rare-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  
+  .rare-swiper-dot {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 6px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .rare-swiper-dot.active {
+    background: black;
+  }
+
+  @media (max-width: 998px) {
+    .rare-image {
+        width: 30px;
+    }
+
+    .rare-description {
+        font-size: 20px;
+    }
+
+    .rare-topic {
+        font-size: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .rare-image {
+        width: 30px;
+    }
+
+    .rare-description {
+        font-size: 18px;
+    }
+
+    .rare-topic {
+        font-size: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .rare-image {
+        width: 20px;
+    }
+
+    .rare-description {
+        font-size: 14px;
+    }
+
+    .rare-topic {
+        font-size: 18px;
+    }
+  }
+  
+  
+  
+  /*  */
+  
+  .rare-swiper-dot:last-child::after {
+    display: none;
+  }
+
+  .rare-swiper-wrapper {
+    display: flex;
+    transition: transform 0.6s ease; /* Add this for swipe effect */
+    will-change: transform;
+  }
+  
+
+
+/* the green java ends there */
  
 
 .featuredWork {
@@ -705,6 +944,9 @@ h3 {
 }
 
 @media  (max-width: 992px) {
+    .pressFreedom {
+        padding: 20px;
+    }
     .pressIndex {
         width: 800px;
         height: 450px;
@@ -750,6 +992,10 @@ h3 {
 }
 
 @media (max-width: 1300px) {
+    .pressFreedom {
+        padding: 20px;
+    }
+
     .pressIndex p {
         font-size: 24px;
         margin-bottom: 25px;
@@ -822,11 +1068,23 @@ h3 {
     margin-bottom: 208px;
 }
 
+.pressFreedom_cta button {
+    font-size: 30px;
+    font-family: var(--ff-basic);
+}
+
+@media (max-width:768px) {
+    .pressFreedom_cta {
+        flex-direction: column;
+    }
+}
+
 .pressFreedom_cta :nth-child(1) {
     background-color: #00ad37;
     padding: 22px 38px;
     color: white;
     border-radius: 40px;
+    border: 0;
 }
 
 .pressFreedom_cta :nth-child(2) {
@@ -851,15 +1109,33 @@ h3 {
 .ctaButtons {
     display: flex;
     gap: 30px;
-    font-size: 30px;
+    
     margin-bottom: 111px;
     margin-top: 38px;
+    
+}
+
+.ctaButtons button {
+    font-size: 30px;
+    font-family: var(--ff-basic);
+}
+
+@media (max-width: 768px) {
+    .ctaButtons {
+        flex-direction: column;
+    }
+
+    .majorCta p {
+        font-size: 32px;
+    }
 }
 
 .ctaButtons :nth-child(1) {
     background-color: #ffb400;
     padding: 22px 28px;
     border-radius: 40px;
+    cursor: pointer;
+    border: 0;
 }
 
 .ctaButtons :nth-child(2) {
@@ -867,6 +1143,8 @@ h3 {
     padding: 22px 38px;
     border-radius: 40px;
     color: white;
+    cursor: pointer;
+    border: 0;
 }
 
 /* footer */
@@ -936,6 +1214,11 @@ footer {
 }
 
 @media (max-width: 992px) {
+    footer {
+        border: 20px solid;
+    }
+
+
     .footer_column {
         flex-direction: column;
         gap: 30px;
@@ -947,6 +1230,9 @@ footer {
 }
 
 @media (max-width: 576px) {
+    footer {
+        border: 15px solid;
+    }
     .levyFooter_info {
         gap: 10px;
         flex-direction: column-reverse;
@@ -1398,6 +1684,31 @@ image-stack .image .active {
     margin-top: 13px;
 }
 
+@media (max-width: 1300px) {
+    .swiper-bg {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        width: 100%;
+    }
+    .slide-text :nth-child(1) {
+        font-size: 23.58px;
+        font-weight: 600;
+    }
+    
+    .slide-text :nth-child(2) {
+        font-size: 24.14px;
+        font-weight: 400px;
+        margin-top: 11px;
+    } 
+
+    .slide-image {
+        width: 190px;
+        height: 200px;
+    }
+}
+
 /* ends here */
 
 /* then the reverse swiper starts here */
@@ -1671,89 +1982,3 @@ image-stack .image .active {
   }
 
 
-
-
-  /* green java */
-
-  .rare-swiper-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .rare-swiper-wrapper {
-    display: flex;
-  }
-  
-  .rare-swiper-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 60px 20px 20px 20px;
-  }
-  
-  .rare-top-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-  }
-  
-  .rare-image {
-    width: 50px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .rare-topic {
-    font-size: 25px;
-    color: white;
-    font-family: var(--ff-primary);
-    font-weight: bold;
-    text-align: center;
-    text-align: left;
-    margin-left: 10px;
-  }
-  
-  .rare-description {
-    font-size: 25px;
-    color: white;
-    line-height: 1;
-    text-align: center;
-  }
-  
-  .rare-swiper-pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-  }
-  
-  .rare-swiper-dot {
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 50%;
-    margin: 0 6px;
-    position: relative;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .rare-swiper-dot.active {
-    background: black;
-  }
-  
-  /*  */
-  
-  .rare-swiper-dot:last-child::after {
-    display: none;
-  }
-
-  .rare-swiper-wrapper {
-    display: flex;
-    transition: transform 0.6s ease; /* Add this for swipe effect */
-    will-change: transform;
-  }
-  
