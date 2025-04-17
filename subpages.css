@@ -7,11 +7,21 @@
 
 
 .dataArch {
-    margin-left: 180px;
-    margin-top: 167px;
     margin-bottom: 95px;
     font-family: var(--ff-primary);
-    
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    max-width: 1400px;
+}
+
+.datacen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 1400px;
 }
 
 .dataArch :nth-child(1) {
@@ -106,4 +116,32 @@
     font-weight: 400;
     font-family: var(--ff-secondary);
     margin-top: 10px;
+}
+
+@media (max-width: 1300px) {
+    .archGrid_info {
+        background-color: #F5F7F8;
+        border: 0.7px solid black;
+        border-radius: 15.28px;
+        margin-left: -70px;
+        width: 250px;
+        height: 630px;
+        padding: 24px 24px 14px 18px;
+    }
+
+    .archGird_sol {
+        font-size: 15px;
+    }
+
+    .dataArch_grid {
+        padding: 20px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 998px) {
+    .dataArch_grid {
+        display: flex;
+        flex-direction: column;
+    }
 }

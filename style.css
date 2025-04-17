@@ -338,6 +338,18 @@ h3 {
     align-items: center;
 } 
 
+@media (max-width: 768px) {
+    .clientPartners {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 568px) {
+    .clientPartners {
+        font-size: 18px;
+    }
+}
+
 .clientPartners_img {
     flex: 0 0 auto;
     max-width: 160px;
@@ -494,6 +506,18 @@ h3 {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .effAnalytics {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 568px) {
+    .effAnalytics {
+        font-size: 24px;
+    }
+}
+
 .industry {
     margin-top: 500px;
    
@@ -505,7 +529,21 @@ h3 {
     align-items: center;
     font-size: 34px;
     margin-bottom: -80px;
+    font-family: var(--ff-basic);
 }
+
+@media (max-width: 768px) {
+    .indSer {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 565px) {
+    .indSer {
+        font-size: 21px;
+    }
+}
+
 
 /* .indSer p {
     line-height: 112px;
@@ -613,6 +651,7 @@ h3 {
 
     .comP {
         font-size: 24px;
+        text-align: center  ;
     }
 
 }
@@ -889,14 +928,19 @@ h3 {
         width: 450px;
     }
 
+    .rare-swiper-slide {
+        margin-top: -50px;
+    }
+
     .rare-image {
         width: 20px;
     }
 
     .rare-description {
         font-size: 14px;
-        width: 500px;
-        margin-left: 100px ;
+        width: 300px;
+        margin-left: 40px ;
+        margin-top: 0;
     }
 
     .rare-topic {
@@ -932,12 +976,12 @@ h3 {
     margin-top: 75px;
 }
 
-.featuredWork :nth-child(1) {
+.featchilda {
     color: #b10002;
     font-size: 35px;
 }
 
-.featuredWork :nth-child(2) {
+.featchildb {
     color: #0F0F0F;
     font-size: 32px;
     font-family: var(--ff-secondary);
@@ -945,7 +989,7 @@ h3 {
     margin-bottom: 65px;
 }
 
-.featuredWork :nth-child(3) {
+.featchildc {
     color: #0F0F0F;
     font-size: 32px;
     font-family: var(--ff-secondary);
@@ -954,6 +998,19 @@ h3 {
 @media (max-width: 765px) {
     .featuredWork{
         padding: 20px;
+    }
+}
+
+@media (max-width: 568px) {
+    .featuredWork{
+        padding: 20px;
+        
+    }
+
+    .featchilda,
+    .featchildb,
+    .featchildc {
+        font-size: 24px;
     }
 }
 
@@ -2316,7 +2373,7 @@ html {
   
   @media only screen and (max-width: 480px) {
     .toc-line {
-      left: 100px;
+      left: 110px;
     }
   
     .toc-section {
@@ -2326,11 +2383,11 @@ html {
     }
   
     h7 {
-      font-size: 16px;
+      font-size: 12px;
     }
   
     .toc-itemInfo {
-      font-size: 12px;
+      font-size: 9px;
     }
   
     .tabButton,
@@ -2341,5 +2398,13 @@ html {
       font-size: 10px;
       padding: 5px 15px;
     }
+
+    .tabButton22 {
+        margin-top: 10px;
+      }
+
+      .tabButton33 {
+        margin-top: 11px;
+      }
   }
   
