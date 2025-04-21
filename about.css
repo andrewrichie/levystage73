@@ -48,14 +48,27 @@
     }
 }
 
-.whyLevy :nth-child(2) {
+@media (max-width: 768px) {
+    .whyLevy_topic {
+        font-size: 44px;
+        margin-top: 82px;
+    }
+}
+
+@media (max-width: 598px) {
+    .whyLevy_topic {
+        font-size: 34px;
+    }
+}
+
+.whytopica {
     font-size: 35px;
     margin-bottom: 30px;
     margin-top: 50px;
     width: 60%;
     font-family: var(--ff-secondary);
 }
-.whyLevy :nth-child(3) {
+.whytopicb {
     font-size: 35px;
     width: 60%;
     margin-bottom: 201px;
@@ -72,6 +85,11 @@
     }
 }
 
+@media (max-width: 768px) {
+    .whytopica, .whytopicb {
+    font-size: 24px;
+    }
+}
 
 
 .lead {
@@ -164,9 +182,26 @@
     .leadP_ceodetail {
         font-size: 21px;
     }
+
+    .leaddiv2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .leaddiv img {
+        width: 150px;
+    }
+
+    .leaddiv2_img {
+        width: 150px;
+    }
 }
 
 @media (max-width: 568px) {
+    .leadSec {
+        margin-left: 40px;
+    }
+
     .leadP_ceodetail {
         font-size: 18px;
         width: 80%;
@@ -280,6 +315,10 @@
 @media (max-width: 768px) {
     .teamcred {
         font-size: 21px;
+    }
+
+    .techCert {
+        font-size: 34px;
     }
 }
 

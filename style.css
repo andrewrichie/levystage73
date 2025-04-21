@@ -71,6 +71,12 @@ header {
    
 }
 
+@media (max-width: 768px) {
+    .levyLogo {
+        width: 75px;
+    }
+}
+
 /* navigation key starts here */
 
 
@@ -152,6 +158,24 @@ header {
     display: flex;
   }
 
+  @media (max-width: 768px) {
+
+    .nav-container {
+        top: 15px;
+        right: 40px;
+    }
+
+   .hamburger {
+    width: 18px;
+    height: 14px;
+   }
+
+   .hamburger span {
+    height: 2px
+   }
+}
+  
+
 
 /* nav key ends here */
 
@@ -221,6 +245,11 @@ h3 {
 }
 
 @media (max-width: 768px) {
+
+    .levyIntro {
+        margin-bottom: 0px;
+    }
+
     h1 {
         font-size: 41px;
     }
@@ -324,6 +353,12 @@ h3 {
     margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .scroll-imgdiv {
+    height: 150px;
+  }
+}
+
 .scroll-img {
     display: flex;
     flex-wrap: nowrap;
@@ -339,6 +374,10 @@ h3 {
 } 
 
 @media (max-width: 768px) {
+    .partSec {
+        margin-top: 84px;
+    }
+
     .clientPartners {
         font-size: 24px;
     }
@@ -476,6 +515,9 @@ h3 {
 }
 
 @media  (max-width: 576px) {
+    .analyticsContainer {
+        margin-bottom: 84px;
+    }
 
     .analyticsUnleash {
         height: 70px;
@@ -639,6 +681,12 @@ h3 {
 }
 
 @media (max-width: 576px) {
+
+    .commonChallenge {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
     .challengeData_topic {
         font-size: 24px;
         margin-top: 12px;
@@ -1063,6 +1111,7 @@ h3 {
     .pressIndex {
         width: 650px;
         height: 370px;
+        border: 15px solid #C1E3FF;
     }
 }
 
@@ -1083,10 +1132,11 @@ h3 {
 }
 
 
-@media  (max-width: 768px) {
-    .pressIndex {
-        padding: 27px 50px 40px 50px;
-    }
+
+
+@media  (max-width: 568px) {
+
+  
 }
 
 
@@ -1161,6 +1211,7 @@ h3 {
     .pressIndex_img div {
         width: 230px;
         height: 120px;
+        border: 8px solid #d9d9d9;
     }
 }
 
@@ -1186,6 +1237,17 @@ h3 {
 @media (max-width:768px) {
     .pressFreedom_cta {
         flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .pressFreedom_cta button {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 568px) {
+    .pressFreedom_cta button {
+        font-size: 18px;
     }
 }
 
@@ -1349,6 +1411,7 @@ footer {
     footer {
         border: 20px solid #037bde;
         height: 800px;
+        border-radius: 42px 42px 0 0;
     }
 
     .levyfooter_img {
@@ -1370,14 +1433,20 @@ footer {
     }
 
     .levyFooter_info {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 
 @media (max-width: 576px) {
     footer {
-        border: 15px solid;
+        border: 15px solid #037bde;
     }
+
+    .levyFooter {
+        margin-bottom: 70px;
+        margin-top: 10px;
+    }
+
     .levyFooter_info {
         gap: 10px;
         flex-direction: column-reverse;
@@ -1500,6 +1569,7 @@ input{
   @media (max-width: 576px) {
     .text-area {
         width: 380px;
+
     }
   }
 
@@ -1941,7 +2011,8 @@ image-stack .image .active {
     }
 
     .slide-text {
-        width: 60%;
+        width: 65%;
+       line-height: 1.2rem;
     }
 }
 
@@ -2342,6 +2413,12 @@ html {
 
   
   @media only screen and (max-width: 768px) {
+
+    .tableofContent {
+        margin-bottom: 84px;
+    }
+
+
     .toc-line {
       left: 180px;
     }
