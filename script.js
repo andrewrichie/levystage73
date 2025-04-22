@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 10,
         loop: true,
         autoplay: {
-            delay: 4000, // Auto-swipe every 3 seconds
+            delay: 7000, // Auto-swipe every 3 seconds
             disableOnInteraction: false, // Continues auto-swiping after manual swipe
         },
         effect: "slide",
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 10,
         loop: true,
         autoplay: {
-            delay: 4000,
+            delay: 7000,
             disableOnInteraction: false,
         },
         effect: "slide",
