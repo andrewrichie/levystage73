@@ -35,7 +35,7 @@
 
    
 
-    <section class="whyLevy container">
+    <section class="whyLevy container animation_section">
         <p class="whyLevy_topic">Why Levy<br> Analytics Group?</p>
 
         <p class="whytopica">
@@ -48,8 +48,8 @@
     </section>
 
     <section class="leadSec container">
-        <p class="lead">Leadership</p>
-        <div  class="leaddiv">
+        <p class="lead animation_section">Leadership</p>
+        <div  class="leaddiv animation_section">
             <div class="leaddiv2">
                 <img class="leaddiv2_img" src="levy img/Mask group (2).png">
             </div>
@@ -63,7 +63,7 @@
 
         </div>
 
-        <div  class="leaddiv">
+        <div  class="leaddiv animation_section">
             <div class="leaddiv2">
                 <img class="leaddiv2_img" src="levy img/Mask group (2).png">
             </div>
@@ -81,9 +81,9 @@
     </section>
 
     <section class="offshoreTeam container">
-        <p class="offTeam">Offshore Team</p>
+        <p class="offTeam animation_section">Offshore Team</p>
         <div class="teamGrid">
-            <div class="teamInfo">
+            <div class="teamInfo animation_section">
                 <div class="teamPhoto"><img src="levy img/Mask group (2).png"> </div>
                 <div class="teamDetail">
                     <p>Gbolahan Adebayo</p>
@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <div class="teamInfo">
+            <div class="teamInfo animation_section">
                 <div class="teamPhoto"></div>
                 <div class="teamDetail">
                     <p>David Owoyemi</p>
@@ -109,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="teamInfo">
+            <div class="teamInfo animation_section">
                 <div class="teamPhoto"></div>
                 <div class="teamDetail">
                     <p>Idris Akilapa</p>
@@ -122,7 +122,7 @@
                 </div>
             </div>
 
-            <div class="teamInfo">
+            <div class="teamInfo animation_section">
                 <div class="teamPhoto"></div>
                 <div class="teamDetail">
                     <p>Teniloluwa Sogbesan</p>
@@ -135,7 +135,7 @@
                 </div>
             </div>
 
-            <div class="teamInfo">
+            <div class="teamInfo animation_section">
                 <div class="teamPhoto"></div>
                 <div class="teamDetail">
                     <p>Aliu Adekola</p>
@@ -148,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="teamInfo">
+            <div class="teamInfo animation_section">
                 <div class="teamPhoto"></div>
                 <div class="teamDetail">
                     <p>Emmanuella Tudome</p>
@@ -164,7 +164,7 @@
         </div>
     </section>
 
-    <div class="techCert">
+    <div class="techCert animation_section">
         <p>
             Technical Certifications
         </p>
@@ -174,7 +174,7 @@
         <!-- Small div with an image, number, and text -->
         <div class="the-stats">
                     
-            <div class="stats">
+            <div class="stats animation_section">
                 <img src="levy img/image 25.png" alt="Icon1" class="icon1">
                 <div class="statsFlex">
                     <div class="number ff-basic" data-start="0" data-end="3">0+</div>
@@ -183,7 +183,7 @@
                
             </div>
 
-            <div class="stats">
+            <div class="stats animation_section">
                 <img src="levy img/image (11).png" alt="Icon2" class="icon2">
                 <div class="statsFlex">
                     <div class="number ff-basic" data-start="0" data-end="225">220+</div>
@@ -192,7 +192,7 @@
                 
             </div>
 
-            <div class="stats">
+            <div class="stats animation_section">
                 <img src="levy img/image (12).png" alt="Icon3" class="icon3">
                 <div class="statsFlex">
                     <div class="number ff-basic" data-start="0" data-end="25">20+</div>
@@ -270,6 +270,8 @@
     </footer>
     
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    
     <script>
         
 
@@ -301,6 +303,12 @@
 
         let observer = new IntersectionObserver(animateNumbers, { threshold: 0.5 });
         document.querySelectorAll('.number').forEach(el => observer.observe(el));
+
+
+
+
+    
+        
 
     </script>
     

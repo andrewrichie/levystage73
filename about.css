@@ -19,6 +19,12 @@
        
 }
 
+@media (min-width: 2500px) {
+    .aboutHead {
+        font-size: 150px;
+    }
+}
+
 @media (max-width: 768px) {
     .aboutHead {
         font-size: 54px;

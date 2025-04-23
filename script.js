@@ -248,3 +248,27 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('show');
 });
+
+
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    
+    
+    
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: ".container",
+            start: "top top",
+            ease: "power1.inOut"
+        }
+    })
+        .from(".animation_section", {
+            y: 120,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.5
+        })
+
+  
+
+});
