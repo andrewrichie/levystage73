@@ -137,6 +137,10 @@
         padding: 20px;
         gap: 40px;
     }
+
+    .dataArch {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 998px) {

@@ -144,17 +144,23 @@ header {
   .nav-menu ul {
     font-size: 34px;
     list-style: none;
-    padding: 50px;
+    padding: 30px;
   }
 
   .nav-menu ul li {
-    margin-bottom: 40px;
+    
   }
 
   .nav-menu ul li a {
     text-decoration: none;
     color: white;
     font-family: var(--ff-basic);
+  }
+
+  .divider {
+    border: 1px solid white;
+    margin-bottom: 25px;
+    margin-top: 25px;
   }
   
   .nav-menu.show {
@@ -1267,18 +1273,32 @@ h3 {
     }
 }
 
-.pressFreedom_cta :nth-child(1) {
+.tabuealink {
     background-color: #00ad37;
     padding: 22px 38px;
     color: white;
     border-radius: 40px;
     border: 0;
+    text-decoration: none;
+    
 }
 
-.pressFreedom_cta :nth-child(2) {
+.tabuealink:hover {
+    background-color: #008cff;
+}
+
+.tabuealink_b {
     border: 1px solid #0F0F0F;
     padding: 22px 38px;
     border-radius: 40px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.tabuealink_b:hover {
+    border: 0;
+    background-color: #008cff;
+    color: white;
 }
 
 .majorCta {
