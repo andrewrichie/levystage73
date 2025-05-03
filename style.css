@@ -132,7 +132,7 @@ header {
     position: absolute;
     top: 70px;
     right: 0;
-    background: var(--blue-primary);
+    background: #7fabfe;
     padding: 10px 20px;
     display: none;
     flex-direction: column;
@@ -153,12 +153,12 @@ header {
 
   .nav-menu ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: var(--ff-basic);
   }
 
   .divider {
-    border: 1px solid white;
+    border: 1px solid black;
     margin-bottom: 25px;
     margin-top: 25px;
   }
@@ -323,6 +323,10 @@ h3 {
     margin-bottom: 104px;
 }
 
+.cta_startJourney:hover {
+    background-color: #057ee0;
+}
+
 @media (max-width: 1300px) {
     .cta_startJourney {
         font-size: 25px;
@@ -393,6 +397,17 @@ h3 {
     justify-content: center;
     align-items: center;
 } 
+
+.clientPartners_img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.clientPartners_img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
 
 @media (max-width: 768px) {
     .partSec {
@@ -743,8 +758,14 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 40px;
     margin-bottom: 120px;
+}
+
+.softty {
+    max-width: 170px;
+    max-height: 70px;
+    margin-top: 50px;
 }
 
 @media (max-width: 992px) {
@@ -1105,6 +1126,23 @@ h3 {
     border-radius: 45px;
 }
 
+.maskcon {
+    background-color: #c1e3ff;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.hrmask {
+    width: 449px;
+    height: 84px;
+}
+
+.hrmaskb {
+    width: 449px;
+    height: 194px;
+}
+
 @media (max-width: 1300px) {
     .pressIndex {
         width: 1000px;
@@ -1200,7 +1238,7 @@ h3 {
 .pressIndex_img div {
     width: 483px;
     height: 371px;
-    border: 14px solid #d9d9d9;
+    border: 14px solid #c1e3ff;
     border-radius: 30px;
 }
 
@@ -1238,10 +1276,10 @@ h3 {
 }
 
 
-.pressIndex_img div img {
+/* .pressIndex_img div img {
     width: 100%;
     height: 100%;
-}
+} */
 
 .pressFreedom_cta {
     display: flex;
@@ -1284,7 +1322,7 @@ h3 {
 }
 
 .tabuealink:hover {
-    background-color: #008cff;
+    background-color: #07a338;
 }
 
 .tabuealink_b {
@@ -1296,9 +1334,7 @@ h3 {
 }
 
 .tabuealink_b:hover {
-    border: 0;
-    background-color: #008cff;
-    color: white;
+    background-color: rgb(253, 250, 250);
 }
 
 .majorCta {
@@ -1350,21 +1386,31 @@ h3 {
     }
 }
 
-.ctaButtons :nth-child(1) {
+.myButtona {
     background-color: #ffb400;
     padding: 22px 28px;
     border-radius: 40px;
     cursor: pointer;
     border: 0;
+    font-size: 30px;
 }
 
-.ctaButtons :nth-child(2) {
+.myButtona:hover {
+    background-color: #dd9f0f;
+}
+
+.myButtonb {
     background-color: var(--blue-primary);
     padding: 22px 38px;
     border-radius: 40px;
     color: white;
     cursor: pointer;
     border: 0;
+    font-size: 30px;
+}
+
+.myButtonb:hover {
+    background-color: #067ada;
 }
 
 /* footer */
@@ -2332,8 +2378,21 @@ html {
     background-color: #03712E;
   }
 
+  .tabButton:hover {
+    background-color: #0e4e27;
+
+  }
+
   .tabButton22 {
     margin-top: 22px;
+  }
+
+  .tabButton2:hover, .tabButton22:hover {
+    background-color: #085ea5;
+  }
+
+  .tabButton3:hover, .tabButton33:hover {
+    background-color: #966e08;
   }
   
   .tabButton { background-color: #03712E; }
