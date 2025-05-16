@@ -44,6 +44,15 @@
     max-width: 1720px;
 }
 
+.dataArch_gridb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    gap: 87px;
+    max-width: 1720px;
+}
+
 .archGrid {
     display: flex;
     
@@ -60,6 +69,7 @@
     width: 150px;
     padding-left: 13px;
     padding-top: 31px;
+    max-height: 730px;
 }
 
 .archNum_b {
@@ -84,8 +94,10 @@
     font-family: var(--ff-primary);
     border-radius: 15.28px;
     width: 150px;
+    max-height: 730px;
     padding-left: 13px;
     padding-top: 31px;
+
 }
 
 .archGrid_info {
@@ -95,6 +107,20 @@
     margin-left: -70px;
     width: 332px;
     height: 730px;
+    padding: 34px 34px 24px 28px;
+}
+
+.infob {
+    height: 730px;
+}
+
+.archGrid_infobb {
+    background-color: #F5F7F8;
+    border: 0.7px solid black;
+    border-radius: 15.28px;
+    margin-left: -70px;
+    width: 332px;
+    height: 770px;
     padding: 34px 34px 24px 28px;
 }
 
@@ -129,14 +155,30 @@
         padding: 24px 24px 14px 18px;
     }
 
+    .archGrid_infobb {
+        background-color: #F5F7F8;
+        border: 0.7px solid black;
+        border-radius: 15.28px;
+        margin-left: -70px;
+        width: 250px;
+        height: 630px;
+        padding: 24px 24px 14px 18px;
+    }
+
+    .archNum_a, .archNum_b, .archNum_c {
+        max-height: 630px;
+    }
+
     .archGird_sol {
         font-size: 15px;
     }
 
-    .dataArch_grid {
+    .dataArch_grid, .dataArch_gridb {
         padding: 20px;
         gap: 40px;
     }
+
+
 
     .dataArch {
         padding: 20px;
@@ -147,5 +189,16 @@
     .dataArch_grid {
         display: flex;
         flex-direction: column;
+    }
+
+    .dataArch_gridb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .archNum_b {
+        max-height: 630px;
     }
 }
