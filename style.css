@@ -765,11 +765,20 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .softwareUsed p {
     font-size: 27.37px;
     color: #0F0F0F;
+}
+
+.softgrp {
+    max-width: 1380px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .softwareUsed_group {
@@ -778,14 +787,32 @@ h3 {
     align-items: center;
     gap: 25px;
     margin-bottom: 120px;
+    animation: scroll-left 20s linear infinite;
+    width: max-content;
 }
 
 .softty {
     height: 50px;
-    /* width: 150px; */
+    width: 150px;
     flex-shrink: 0;
     object-fit: contain;
-    margin-top: 50px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: filter 0.3s;
+    margin-right: 32px;
+}
+
+.softty:hover {
+    filter: grayscale(0%);
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 1300px) {
