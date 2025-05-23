@@ -14,6 +14,7 @@
     align-items: start;
     flex-direction: column;
     max-width: 1400px;
+    margin-top: 200px;
 }
 
 .datacen {
@@ -39,7 +40,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     gap: 87px;
     max-width: 1720px;
 }
@@ -55,7 +56,7 @@
 
 .archGrid {
     display: flex;
-    
+    max-height: 730px;
 }
 
 .archNum_a {
@@ -85,6 +86,20 @@
     padding-top: 31px;
 }
 
+.archNum_bb {
+    background-color: #FDB813;
+    background-image: url(levy\ img/yellowgroup.png);
+    color: white;
+    font-size: 34.28px;
+    font-weight: 700;
+    font-family: var(--ff-primary);
+    border-radius: 15.28px;
+    width: 150px;
+    padding-left: 13px;
+    padding-top: 31px;
+    height: 770px;
+}
+
 .archNum_c {
     background-color: #11ab4b;
     background-image: url(levy\ img/greengroup.png);
@@ -106,12 +121,13 @@
     border-radius: 15.28px;
     margin-left: -70px;
     width: 332px;
-    height: 730px;
+    /* height: 730px; */
     padding: 34px 34px 24px 28px;
+   
 }
 
 .infob {
-    height: 730px;
+    /* height: 730px; */
 }
 
 .archGrid_infobb {
@@ -122,6 +138,7 @@
     width: 332px;
     height: 770px;
     padding: 34px 34px 24px 28px;
+    /* margin-top: 90px; */
 }
 
 .archGrid_info img {
@@ -153,6 +170,7 @@
         width: 250px;
         height: 630px;
         padding: 24px 24px 14px 18px;
+     
     }
 
     .archGrid_infobb {
@@ -183,9 +201,29 @@
     .dataArch {
         padding: 20px;
     }
+
+    .archNum_bb {
+        height: 630px;
+    }
 }
 
 @media (max-width: 998px) {
+
+    .archGrid_info, .archGrid_infobb {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .dataArch {
+        margin-top: 100px;
+        
+    }
+
+    .dataArch :nth-child(1) {
+        font-size: 31px;
+    }
+
+
     .dataArch_grid {
         display: flex;
         flex-direction: column;
@@ -198,7 +236,107 @@
         align-items: center;
     }
 
+    /* .archGrid_info img, .archGird_topic {
+        flex: 1 0 50%;
+    } */
+
+    .archGird_sol {
+        flex: 1 0 100%;
+    }
+
     .archNum_b {
         max-height: 630px;
     }
+
+    .archGrid {
+        height: 300px;
+        width: 700px;
+    }
+
+    .archGrid_info, .archGrid_infobb {
+        width: 700px;
+        height: 300px;
+    }
+
+    .archNum_bb {
+        height: 300px;
+    }
+
+    .archGrid_info img, .archGrid_infobb img {
+        margin-right: 20px;
+    }
+
+  
+}
+
+@media (max-width: 765px) {
+
+    .dataArch :nth-child(2) {
+        font-size: 12px;
+    }
+ 
+ 
+    .archGrid {
+        height: 250px;
+        width: 600px;
+    }
+
+    .archGrid_info, .archGrid_infobb {
+        width: 600px;
+        height: 250px;
+    }
+
+    .archGird_topic {
+        font-size: 21px;
+    }
+
+    .archGird_sol {
+        font-size: 11px;
+    }
+
+    .archGrid_info img, .archGrid_infobb img {
+        width: 28px;
+        height: 28px;
+    }
+
+    
+    .archNum_bb {
+        height: 250px;
+    }
+
+    .archNum_a, .archNum_b, .archNum_bb, .archNum_c {
+        font-size: 21px;
+        
+    }
+}
+
+@media (max-width: 568px) {
+    .archGrid {
+        height: 200px;
+        width: 400px;
+    }
+
+    .archGrid_info, .archGrid_infobb {
+        width: 400px;
+        height: 200px;
+    }
+
+    .archGird_topic {
+        font-size: 15px;
+    }
+
+    .archGird_sol {
+        font-size: 8px;
+    }
+
+    .archGrid_info img, .archGrid_infobb img {
+        width: 18px;
+        height: 18px;
+    }
+
+    
+    .archNum_bb {
+        height: 200px;
+    }
+
 }
