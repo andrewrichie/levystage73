@@ -161,6 +161,10 @@
     margin-top: 10px;
 }
 
+.topspp {
+    margin-top: 200px;
+}
+
 @media (max-width: 1300px) {
     .archGrid_info {
         background-color: #F5F7F8;
@@ -274,29 +278,47 @@
     .dataArch :nth-child(2) {
         font-size: 12px;
     }
+
+    .dataArch {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .dataArch :nth-child(1) {
+        font-size: 25px;
+    }
  
  
     .archGrid {
         height: 250px;
         width: 600px;
+        
+    }
+
+    .dataArch_grid {
+        gap: 15px;
     }
 
     .archGrid_info, .archGrid_infobb {
         width: 600px;
         height: 250px;
+        margin-left: -85px;
     }
 
     .archGird_topic {
         font-size: 21px;
+        margin-bottom: 0px;
     }
 
     .archGird_sol {
         font-size: 11px;
+        margin-top: 0px;
     }
 
     .archGrid_info img, .archGrid_infobb img {
         width: 28px;
         height: 28px;
+        margin-right: 9px;
     }
 
     
@@ -305,20 +327,26 @@
     }
 
     .archNum_a, .archNum_b, .archNum_bb, .archNum_c {
-        font-size: 21px;
+        font-size: 17px;
         
     }
 }
 
 @media (max-width: 568px) {
     .archGrid {
-        height: 200px;
-        width: 400px;
+        height: 150px;
+        width: 350px;
     }
 
     .archGrid_info, .archGrid_infobb {
-        width: 400px;
-        height: 200px;
+        width: 350px;
+        height: 150px;
+        padding: 15px 10px;
+        margin-left: -105px;
+    }
+
+    .dataArch :nth-child(1) {
+        font-size: 21px;
     }
 
     .archGird_topic {
@@ -332,11 +360,17 @@
     .archGrid_info img, .archGrid_infobb img {
         width: 18px;
         height: 18px;
+        margin-right: 5px;
     }
 
     
     .archNum_bb {
-        height: 200px;
+        height: 150px;
+    }
+
+    .archNum_a, .archNum_b, .archNum_bb, .archNum_c {
+        font-size: 12px;
+        
     }
 
 }
