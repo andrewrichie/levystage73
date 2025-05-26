@@ -345,7 +345,7 @@ h3 {
     .cta_startJourney {
         font-size: 19px;
         padding: 15px 25px;
-        
+        margin-bottom: 20px;
     }
 }
 
@@ -577,7 +577,7 @@ h3 {
     .analyticsUnleash img {
         width: 170px;
         height: 90px;
-        margin-top: -77px;
+        margin-top: -27px;
     }
     
     .analyticsUnleash p {
@@ -592,22 +592,22 @@ h3 {
     }
 
     .analyticsUnleash {
-        height: 70px;
+        height: 45px;
     }
 
     .analyticsBorder {
-        height: 70px;
+        height: 45px;
         width: 100%;
     }
 
     .analyticsUnleash img {
-        width: 150px;
-        height: 80px;
-        margin-top: -77px;
+        width: 100px;
+        height: 60px;
+        
     }
     
     .analyticsUnleash p {
-        font-size: 17.22px;
+        font-size: 10.22px;
         color: white;
     }
 }
@@ -765,12 +765,17 @@ h3 {
     .challengeData_text {
         font-size: 12px;
     }
+
+    .challengeData {
+        gap: 10px;
+       
+    }
 }
 
 @media (max-width: 576px) {
 
     .commonChallenge {
-        margin-top: 0px;
+        margin-top: -100px;
         margin-bottom: 50px;
     }
 
@@ -1406,11 +1411,12 @@ h3 {
         width: 650px;
         height: 370px;
         border: 15px solid #C1E3FF;
+        padding: 10px !important;
     }
 
     .pressIndex_img {
         width: 400px;
-        gap: 10px;
+        gap: 10px !important;
     }
 
     
@@ -1433,25 +1439,31 @@ h3 {
 
 @media (max-width: 576px) {
     .pressIndex {
-        width: 530px;
-        height: 300px;
+        width: 350px;
+        height: 180px;
+        border-radius: 10px;
         border: 10px solid #C1E3FF;
-        padding: 17px 30px 20px 30px;
+        
+    
     }
 
     .pressIndex p {
-        font-size: 18px;
+        font-size: 10px;
+        line-height: 10px;
+        margin-left: 5px;
     }
 
     .pressIndex_img {
-        width: 400px;
-        gap: 10px;
-        margin-left: -50px;
+        width: 234px;
+       
+        gap: 5px;
+        margin-left: 30px;
         
     }
 
     .pressIndex_img div {
         border-radius: 15px !important;
+      
     }
 
     .maskcon {
@@ -1460,23 +1472,26 @@ h3 {
 
       
     .hrmask {
-        width: 209px;
-        height: 40px;
+        width: 134px;
+        height: 30px;
+         border-radius: 11px;
     }
     
     .hrmaskb {
-        width: 209px;
-        height: 60px;
+        width: 134px;
+        height: 50px;
+         border-radius: 11px;
     } 
 
     .hrmaskc {
-        width: 159px;
-        height: 103px;
+        width: 119px;
+        height: 82px;
+        border-radius: 11px;
     }
 }
 
 .pressIndex {
-    padding: 47px 110px 80px 110px;
+    padding: 20px;
 }
 
 
@@ -1527,7 +1542,7 @@ h3 {
 .pressIndex_img div {
     width: 483px;
     height: 371px;
-    border: 14px solid #c1e3ff;
+    border: 7px solid #c1e3ff;
     border-radius: 30px;
 }
 
@@ -1541,6 +1556,7 @@ h3 {
 @media  (max-width: 992px) {
     .pressFreedom {
         padding: 20px;
+        margin-top: 10px;
     }
 
     .pressIndex_img div {
@@ -1559,8 +1575,9 @@ h3 {
 @media (max-width: 576px) {
     .pressIndex_img div {
         width: 230px;
-        height: 120px;
-        border: 8px solid #d9d9d9;
+        height: 90px;
+        border: 5px solid #C1E3FF;
+        border-radius: 2px;
     }
 }
 
@@ -1665,6 +1682,7 @@ h3 {
 @media (max-width: 768px) {
     .majorCta {
         padding: 20px;
+        margin-top: 0   ;
     }
 
     .ctaButtons {
@@ -1729,6 +1747,7 @@ h3 {
         align-items: center;
         justify-content: center;
         gap: 10px;
+        margin-bottom: 0;
     }
     .myButtona {
         padding: 5px 10px;
@@ -1874,6 +1893,11 @@ footer {
 @media (max-width: 576px) {
     footer {
         border: 0;
+        
+    }
+
+    .footer_column {
+        gap: 50px;
     }
 
     .levyFooter {
@@ -1881,10 +1905,20 @@ footer {
         margin-top: 10px;
     }
 
+    .levyfooter_img img {
+        width: 80px;
+        height: 24px;
+    }
+
     .levyFooter_info {
-        gap: 10px;
+        gap: 30px;
         
-        font-size: 15px;
+        font-size: 11px;
+    }
+
+    .levylink img {
+        width: 10px;
+        height: 10px;
     }
 }
 
@@ -2186,6 +2220,7 @@ input{
     width: 848px;
     height: 651px;
     cursor: pointer;
+    
 }
 
 @media  (max-width: 992px) {
@@ -2199,14 +2234,20 @@ input{
     .image-stack {
         width: 600px;
         height: 400px;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 @media  (max-width: 576px) {
+
+ 
+
     .image-stack {
         width: 450px;
         height: 350px;
+     
     }
 }
 
@@ -2287,8 +2328,7 @@ image-stack .image .active {
     width: 100%;
     height: 530px;
     background-image: url('levy\ img/blue1.png'); /* Set your background image */
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     z-index: 0; /* Keeps it behind */
 }
@@ -2386,41 +2426,9 @@ image-stack .image .active {
     }
     
     .slide-text :nth-child(2) {
-        font-size: 21.14px;
+        font-size: 19.14px;
         font-weight: 400px;
         margin-top: 10px;
-    } 
-
-    .swiper-slide .slide-image {
-        width: 120px;
-        height: 150px;
-    }
-
-    .slide-text {
-        width: 60%;
-    }
-}
-
-@media (max-width: 765px) {
-    /* .swiper-bg {
-        width: 500px;
-
-        height: 300px;
-    } */
-
-    .swiper-slide {
-        width: 100%;
-    }
-    .slide-text :nth-child(1) {
-        font-size: 14.58px;
-        font-weight: 600;
-    }
-    
-    .slide-text :nth-child(2) {
-        font-size: 15.14px;
-        font-weight: 400px;
-        margin-top: 9px;
-        line-height: 13px;
     } 
 
     .swiper-slide .slide-image {
@@ -2433,33 +2441,86 @@ image-stack .image .active {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 765px) {
+  
     .swiper-bg {
         width: 100%;
+      
     }
 
     .swiper-slide {
         width: 100%;
     }
     .slide-text :nth-child(1) {
-        font-size: 10.58px;
+        font-size: 12.58px;
         font-weight: 600;
     }
     
     .slide-text :nth-child(2) {
-        font-size: 9.14px;
+        font-size: 11.14px;
         font-weight: 400px;
         margin-top: 9px;
     } 
 
     .swiper-slide .slide-image {
         width: 70px;
-        height: 90px;
+        height: 80px;
     }
 
     .slide-text {
-        width: 65%;
-       line-height: 1.2rem;
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .swiper-container {
+        height: 150px;
+        
+    }
+
+    .custom-swiper {
+        height: 150px;
+        margin-top: 40px;
+    }
+
+
+    .swiper-bg {
+        width: 100%;
+        height: 150px;
+        background-image: url(levy\ img/smallblup.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+  
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 90px;
+        margin-top: -30px;
+        padding: 5px;
+        border: 3px solid red;
+       
+       
+    }
+    .slide-text :nth-child(1) {
+        font-size: 7.58px;
+        font-weight: 600;
+    }
+    
+    .slide-text :nth-child(2) {
+        font-size: 6.14px;
+        font-weight: 400px;
+        margin-top: 9px;
+    } 
+
+    .swiper-slide .slide-image {
+        width: 52px;
+        height: 55px;
+    }
+
+    .slide-text {
+        width: 60%;
     }
 }
 
@@ -2488,8 +2549,6 @@ image-stack .image .active {
     background-image: url('levy\ img/blue2.png'); /* Set your background image */
     background-size: cover;
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     z-index: 0;
 }
 
@@ -2575,14 +2634,14 @@ image-stack .image .active {
     }
     
     .reverse-swiper .slide-text :nth-child(2) {
-        font-size: 21.14px;
+        font-size: 19.14px;
         font-weight: 400px;
         margin-top: 10px;
     } 
 
     .reverse-swiper .swiper-slide .slide-image {
-        width: 120px;
-        height: 150px;
+        width: 100px;
+        height: 120px;
     }
 
     .reverse-swiper .slide-text {
@@ -2599,19 +2658,19 @@ image-stack .image .active {
         width: 100%;
     }
     .reverse-swiper .slide-text :nth-child(1) {
-        font-size: 13.58px;
+        font-size: 12.58px;
         font-weight: 600;
     }
     
     .reverse-swiper .slide-text :nth-child(2) {
-        font-size: 14.14px;
+        font-size: 11.14px;
         font-weight: 400px;
         margin-top: 9px;
     } 
 
     .reverse-swiper .swiper-slide .slide-image {
-        width: 100px;
-        height: 120px;
+        width: 70px;
+        height: 80px;
     }
 
     .reverse-swiper .slide-text {
@@ -2620,33 +2679,53 @@ image-stack .image .active {
 }
 
 @media (max-width: 576px) {
+
+    .reverse-swiper {
+        height: 150px !important;
+        margin-bottom: 200px;
+        margin-top: -40px;
+    }
+
     .reverse-swiper .swiper-bg {
         width: 100%;
+        height: 150px;
+        background-image: url(levy\ img/smallbldw.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .reverse-container {
+        height: 150px;
     }
 
     .reverse-swiper .swiper-slide {
         width: 100%;
+        height: 90px;
+        border: 3px solid red;
+        margin-top: 80px;
+        padding: 5px;
     }
     .reverse-swiper .slide-text :nth-child(1) {
-        font-size: 9.58px;
+        font-size: 7.58px;
         font-weight: 600;
     }
     
     .reverse-swiper .slide-text :nth-child(2) {
-        font-size: 10.14px;
+        font-size: 6.14px;
         font-weight: 400px;
         margin-top: 9px;
     } 
 
     .reverse-swiper .swiper-slide .slide-image {
-        width: 70px;
-        height: 90px;
+        width: 52px;
+        height: 55px;   
     }
 
     .reverse-swiper .slide-text {
         width: 60%;
     }
 }
+
 
 
 
