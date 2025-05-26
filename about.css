@@ -55,6 +55,8 @@
 }
 
 @media (max-width: 768px) {
+  
+
     .whyLevy_topic {
         font-size: 44px;
         margin-top: 52px;
@@ -62,9 +64,14 @@
 }
 
 @media (max-width: 598px) {
+    .whyLevy {
+      
+    }
+
     .whyLevy_topic {
         font-size: 24px;
         margin-top: 35px;
+        margin-left: -120px;
     }
 }
 
@@ -72,11 +79,13 @@
     font-size: 35px;
     margin-bottom: 30px;
     margin-top: 50px;
+    margin-left: -70px;
     width: 60%;
     font-family: var(--ff-secondary);
 }
 .whytopicb {
     font-size: 35px;
+    margin-left: -70px;
     width: 60%;
     margin-bottom: 201px;
     font-family: var(--ff-secondary);
