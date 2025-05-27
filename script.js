@@ -1,28 +1,3 @@
-// function initImageStack(containerSelector) {
-//     const container = document.querySelector(containerSelector);
-//     if (!container) return;
-
-//     container.addEventListener("click", function () {
-//         let images = Array.from(container.querySelectorAll(".image"));
-
-//         if (images.length < 3) return; // Ensure we have 3 images
-
-//         // Move the back image (last in array) to the front
-//         let lastImage = images.pop(); // Remove last image from array
-//         container.prepend(lastImage); // Move it to the front of the stack
-
-//         // Update class assignments
-//         lastImage.className = "image front";  // Now the top image
-//         images[0].className = "image middle"; // Becomes the second image
-//         images[1].className = "image back";   // Moves to the back
-//     });
-// }
-
-// // Initialize for this section
-// initImageStack(".image-stack");
-
-
-
 function initScrollImageStack(containerSelector) {
     const container = document.querySelector(containerSelector);
     if (!container) return;
@@ -35,55 +10,60 @@ function initScrollImageStack(containerSelector) {
     // Initial order
     reorderImages(currentIndex, images);
 
-    container.addEventListener("wheel", function (event) {
-        // Only trigger if mouse is hovering over the image stack
+    // SCROLL interaction (desktop / tablet)
+    function handleScroll(event) {
         if (!container.matches(':hover')) return;
 
-        // SCROLL DOWN
         if (event.deltaY > 0) {
             if (currentIndex < maxIndex) {
-                event.preventDefault(); // Block page scroll
+                event.preventDefault();
                 if (isScrolling) return;
                 isScrolling = true;
                 currentIndex++;
                 reorderImages(currentIndex, images);
                 setTimeout(() => isScrolling = false, 1000);
             }
-            // else: let scroll go through (page scrolls)
-        }
-
-        // SCROLL UP
-        else if (event.deltaY < 0) {
+        } else if (event.deltaY < 0) {
             if (currentIndex > 0) {
-                event.preventDefault(); // Block page scroll
+                event.preventDefault();
                 if (isScrolling) return;
                 isScrolling = true;
                 currentIndex--;
                 reorderImages(currentIndex, images);
                 setTimeout(() => isScrolling = false, 500);
             }
-            // else: let scroll go through (page scrolls)
         }
-    }, { passive: false });
+    }
+
+    // Only attach scroll listener for screens wider than 768px
+    if (window.innerWidth > 768) {
+        container.addEventListener("wheel", handleScroll, { passive: false });
+    } else {
+        // Mobile: auto cycle
+        let autoScrollInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            reorderImages(currentIndex, images);
+        }, 2500); // change every 2.5s
+
+        // OPTIONAL: stop auto-switching on user touch
+        container.addEventListener("touchstart", () => {
+            clearInterval(autoScrollInterval);
+        }, { once: true });
+    }
 
     function reorderImages(index, images) {
-        // Move the desired image to the front
         const ordered = [...images];
         while (container.firstChild) container.removeChild(container.firstChild);
 
-        // Rotate array so selected index is front
         const rotated = ordered.slice(index).concat(ordered.slice(0, index));
         rotated.forEach(img => container.appendChild(img));
 
-        // Assign classes
         rotated[0].className = "image front";
         if (rotated[1]) rotated[1].className = "image middle";
         if (rotated[2]) rotated[2].className = "image back";
     }
 }
 initScrollImageStack(".image-stack");
-
-
 
 
 

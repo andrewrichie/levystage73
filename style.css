@@ -1331,6 +1331,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    padding: 10px;
 }
 
 .hrmask {
@@ -1343,7 +1344,13 @@ h3 {
     height: 194px;
 }
 
+.conmas {
+    padding: 10px;
+    background-color: #c1e3ff;
+}
+
 .hrmaskc {
+    width: 449px;
     border-radius: 15px;
 }
 
@@ -1359,19 +1366,23 @@ h3 {
         margin-bottom: 25px;
     }
 
+    .maskcon {
+        gap: 30px;
+    }
+
     .hrmask {
-        width: 329px;
-        height: 80px;
+        width: 355px;
+        height: 110px;
     }
     
     .hrmaskb {
-        width: 329px;
-        height: 190px;
+        width: 355px;
+        height: 200px;
     }
 
     .hrmaskc {
-        width: 329px;
-        height: 255px;
+        width: 355px;
+        height: 245px;
     }
 
 }
@@ -1420,7 +1431,23 @@ h3 {
     .pressIndex_img {
         width: 400px;
         gap: 10px !important;
+        margin-left: 100px;
     }
+
+    .pressIndex_img div {
+        border-radius: 20px !important;
+    }
+
+    .maskcon {
+        gap: 20px;
+        
+    }
+
+    .exp {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
 
     
     .hrmask {
@@ -1445,8 +1472,8 @@ h3 {
         width: 350px;
         height: 180px;
         border-radius: 10px;
-        border: 10px solid #C1E3FF;
-        
+        border: 5px solid #C1E3FF;
+        padding: 0px;
     
     }
 
@@ -1457,39 +1484,53 @@ h3 {
     }
 
     .pressIndex_img {
-        width: 234px;
-       
+        width: 304px;
+        border-radius: 7px;
         gap: 5px;
-        margin-left: 30px;
+        margin-left: 0px;
         
     }
 
     .pressIndex_img div {
-        border-radius: 15px !important;
+        border-radius: 9px !important;
+        
       
     }
 
     .maskcon {
         gap: 5px;
+        padding: 5px;
+    }
+
+    .conmas {
+        padding: 0px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exp {
+        margin-top: 0;
     }
 
       
     .hrmask {
-        width: 134px;
-        height: 30px;
-         border-radius: 11px;
+        width: 128px;
+        height: 25px;
+         border-radius: 5px;
     }
     
     .hrmaskb {
-        width: 134px;
-        height: 50px;
-         border-radius: 11px;
+        width: 128px;
+        height: 45px;
+         border-radius: 5px;
     } 
 
     .hrmaskc {
-        width: 119px;
-        height: 82px;
-        border-radius: 11px;
+        width: 131px;
+        height: 76px;
+        border-radius: 5px;
     }
 }
 
@@ -1760,8 +1801,9 @@ h3 {
     }
 
     .myButtonb {
-        border-radius: 25px;
+        border-radius: 10px;
         font-size: 12px;
+        padding: 10px;
     }
 }
 
@@ -2746,301 +2788,6 @@ image-stack .image .active {
 
 
 
-/* table of content begins here */
-html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Outer wrapper */
-  .tableofContent {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-height: 400px;
-    overflow-y: auto    ;
-    margin-top: 85px;
-    margin-bottom: 380px;
-  }
-  
-  /* Wraps both line + scroll container */
-  .toc-line-wrapper {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* The vertical line */
-  .toc-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #ccc;
-    z-index: 1;
-    
-    /* Aligns with left column */
-    left: calc(50% - 646px + 320px);
-  }
-  
-  /* Scrollable content */
-  .toc-container {
-    position: relative;
-    width: 1292px;
-    max-width: 100%;
-    height: 30vh;
-    max-height: 60vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none;
-    z-index: 2;
-    scroll-snap-type: none;
-  }
-  
-  .toc-container::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Sections */
-  .toc-section {
-    scroll-snap-align: start;
-    height: 20vh;
-    max-height: 300px;
-    margin-bottom: 150px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 30px;
-    column-gap: 30px;
-    padding: 10px 0;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .toc-row2 {
-    opacity: 1;
-  }
-  
-  /* Button styling */
-  .tabButton,
-  .tabButton2,
-  .tabButton22,
-  .tabButton3,
-  .tabButton33 {
-    color: white;
-    border: 0;
-    font-size: 14.58px;
-    padding: 17px 66px;
-    border-radius: 6px;
-    background-color: #03712E;
-  }
-
-  .tabButton:hover {
-    background-color: #0e4e27;
-
-  }
-
-  .tabButton22 {
-    margin-top: 22px;
-  }
-
-  .tabButton2:hover, .tabButton22:hover {
-    background-color: #085ea5;
-  }
-
-  .tabButton3:hover, .tabButton33:hover {
-    background-color: #966e08;
-  }
-  
-  .tabButton { background-color: #03712E; }
-  .tabButton2, .tabButton22 { background-color: #0466D6; }
-  .tabButton3, .tabButton33 { background-color: #C38C01; }
-  .tabButton33 { margin-top: 27px; }
-  
-  .tabButton a,
-  .tabButton2 a,
-  .tabButton22 a,
-  .tabButton3 a,
-  .tabButton33 a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Headings & Text */
-  h7 {
-    font-size: 31px;
-    font-weight: 700;
-  }
-
-  .break {
-    display: none;
-  }
-
-  .breakk {
-    display: none;
-  }
-  
-  .toc-itemInfo {
-    font-size: 23px;
-    font-weight: 400;
-    letter-spacing: -1px;
-    white-space: nowrap;
-    margin-top: 16px;
-    margin-bottom: 30px;
-  }
-  
-  .toc-itemTopic {
-    font-size: 12.78px;
-    font-weight: 400;
-    margin: 0;
-  }
-  
-  .toc-item img {
-    width: 47px;
-    display: block;
-  }
-  
-  /* Responsive Tweaks */
-  @media only screen and (max-width: 1292px) {
-    .tableofContent {
-        padding: 20px;
-    }
-
-    .toc-line {
-      left: 320px;
-    }
-  
-    .toc-container {
-      height: 45vh;
-      max-height: 75vh;
-    }
-  
-    .toc-section {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 20px;
-    }
-  
-    h7 {
-      font-size: 28px;
-    }
-  
-    .toc-itemInfo {
-      font-size: 20px;
-    }
-  
-    .tabButton,
-    .tabButton2,
-    .tabButton22,
-    .tabButton3,
-    .tabButton33 {
-      font-size: 12px;
-      padding: 12px 50px;
-    }
-  }
-
-  
-  @media only screen and (max-width: 1100px) {
-    .toc-line {
-        left: 260px;
-    }
-
-    h7 {
-        font-size: 23px;
-    }
-  }
-
-  @media (max-width: 900px) {
-    .break {
-        display: inline;
-    }
-
-    .toc-line {
-        left: 180px;
-    }
-
-    .breakk {
-        display: inline;
-      }
-  }
-
-  
-  @media only screen and (max-width: 768px) {
-
-    .tableofContent {
-        margin-bottom: 84px;
-    }
-
-
-    .toc-line {
-      left: 180px;
-    }
-  
-    .toc-container {
-      height: 30vh;
-      max-height: 50vh;
-    }
-  
-    .toc-section {
-      column-gap: 10px;
-      row-gap: 10px;
-    }
-  
-    h7 {
-      font-size: 21px;
-    }
-  
-    .toc-itemInfo {
-      font-size: 12px;
-    }
-
-    .toc-item img {
-        width: 24px;
-    }
-
-   
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .toc-line {
-      left: 110px;
-    }
-  
-    .toc-section {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 10px;
-      row-gap: 15px;
-    }
-  
-    h7 {
-      font-size: 12px;
-    }
-  
-    .toc-itemInfo {
-      font-size: 9px;
-    }
-  
-    .tabButton,
-    .tabButton2,
-    .tabButton22,
-    .tabButton3,
-    .tabButton33 {
-      font-size: 10px;
-      padding: 5px 15px;
-    }
-
-    .tabButton22 {
-        margin-top: 10px;
-      }
-
-      .tabButton33 {
-        margin-top: 11px;
-      }
-  }
-
-
 
   /* new table starts here */
 
@@ -3085,6 +2832,7 @@ html {
     position: relative;
     max-width: 1300px;
     margin: 0 auto;
+    margin-bottom: 200px;
 
   }
   
@@ -3306,6 +3054,7 @@ html {
         display: grid;
         grid-template-columns: 30% 1fr;
         column-gap: 1rem;
+        
     }
 
     .dataTop {
