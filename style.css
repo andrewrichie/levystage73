@@ -1801,7 +1801,7 @@ h3 {
     }
 
     .myButtonb {
-        border-radius: 10px;
+        border-radius: 15px;
         font-size: 12px;
         padding: 10px;
     }
@@ -1953,9 +1953,13 @@ footer {
         gap: 50px;
     }
 
+    .info-stack {
+        margin-top: 50px;
+    }
+
     .levyFooter {
         /* margin-bottom: 70px; */
-        margin-top: 10px;
+        margin-top: 100px;
     }
 
     .levyfooter_img img {
@@ -2032,18 +2036,24 @@ input{
   @media (max-width: 576px) {
     input {
         width: 380px;
+        font-size: 7px;
+    }
+
+    
+    input::placeholder {
+        font-size: 14px !important;
     }
   }
 
   @media (max-width: 480px) {
     input {
-        width: 300px;
-        font-size: 14px;
+        width: 355px;
+        font-size: 7px;
         padding: 15px;
     }
 
     input::placeholder {
-        font-size: 14px;
+        font-size: 7px;
     }
   }
   
@@ -2090,13 +2100,14 @@ input{
   @media (max-width: 576px) {
     .text-area {
         width: 380px;
-
+        height: 106px;
     }
+
   }
 
   @media (max-width: 480px) {
     .text-area {
-        width: 300px;
+        width: 355px;
         font-size: 14px;
         padding: 15px;
     }
@@ -2149,10 +2160,12 @@ input{
 
   @media (max-width: 480px) {
     .send-message {
-        width: 300px;
+        width: 355px;
         
 
     }
+
+    
   }
   
   
@@ -2564,7 +2577,7 @@ image-stack .image .active {
     .slide-text :nth-child(2) {
         font-size: 6.14px;
         font-weight: 400px;
-        margin-top: 9px;
+        margin-top: 4px;
     } 
 
     .swiper-slide .slide-image {
@@ -2816,7 +2829,7 @@ image-stack .image .active {
     max-width: 1300px;
     overflow-y:auto;
     scroll-snap-type:y mandatory;
-   
+    scroll-behavior: smooth;
     display:grid;
     grid-auto-rows: 30vh;       
     border-inline:var(--g) solid transparent;
@@ -3050,11 +3063,15 @@ image-stack .image .active {
         margin-bottom: 80px;
     }
 
+    .service-pager {
+        scroll-padding-bottom: 300px; /* gives a buffer to the last row */
+      }
+
     .row {
         display: grid;
         grid-template-columns: 30% 1fr;
         column-gap: 1rem;
-        
+        margin-bottom: 100px;
     }
 
     .dataTop {
@@ -3086,11 +3103,27 @@ image-stack .image .active {
 
     .blubox, .grnbox, .yelbox {
         padding: 5px 22px;
+        font-size: 7px;
     }
 
     .fixed-line {
         left: 30%;
     }
+
+    .card {
+        gap: 5px;
+    }
+
+    .row {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.6s ease;
+      }
+    
+      .row.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
 
 
