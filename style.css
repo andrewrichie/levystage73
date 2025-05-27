@@ -78,6 +78,17 @@ header {
     .levyLogo {
         width: 75px;
     }
+
+
+}
+
+
+@media (max-width: 568px) {
+    .levyLogo {
+        width: 55px;
+    }
+
+    
 }
 
 /* navigation key starts here */
@@ -445,6 +456,7 @@ h3 {
 @media (max-width: 568px) {
     .clientPartners {
         font-size: 18px;
+        margin-bottom: 0;
     }
 }
 
