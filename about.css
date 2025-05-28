@@ -102,6 +102,15 @@
 }
 
 @media (max-width: 768px) {
+  
+
+    .whyLevy_topic {
+        font-size: 32px;
+        margin-left: -30px;
+       
+    }
+
+
     .whytopica, .whytopicb {
     font-size: 24px;
     }
@@ -110,17 +119,19 @@
     .whytopica {
         margin-top: 16px;
         margin-bottom: 26px;
+        width: 80%;
     }
 
     .whytopicb {
         margin-bottom: 50px;
+        width: 80%;
     }
 }
 
 @media (max-width: 568px) {
     .whytopica, .whytopicb {
     font-size: 14px;
-    margin-left: -70px;
+    margin-left: 20px;
     }
 
 }
@@ -202,37 +213,53 @@
 
 @media (max-width: 768px) {
 
-    .leadSec {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+    .leaddiv {
+        gap: 15px;
+        margin-bottom: 40px;
     }
 
-    .leadP_ceodetail {
-        font-size: 17px;
+    .leadP {
+        margin-top: 10px;
     }
+
 
     .leaddiv2 {
-        width: 200px;
-        height: 200px;
+        width: 138px;
+        height: 162px;
+        border-radius: 12px;
+        border: 7px solid #d9d9d9;
     }
 
-    .leaddiv img {
-        width: 120px;
+    .leaddiv2 img {
+        width: 109px;
     }
 
     .leaddiv2_img {
-        width: 120px;
+        width: 90px;
+        height: 104px;
+    }
+
+    .leadSec {
+        margin-left: 40px;
+    }
+
+    .leadP_ceo {
+        font-size: 28px;
     }
 
     .leadP_vice {
-        margin-bottom: 10px;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .leadP_ceodetail {
+        font-size: 15px;
+        width: 80%;
     }
 
     .lead {
-        font-size: 34px;
+        font-size: 22px;
+        margin-left: -240px;
     }
 }
 
@@ -405,14 +432,37 @@
 }
 
 @media (max-width: 768px) {
+    .teamPhoto {
+        width: 150px;
+        height: 175px;
+        border: 6px solid #d9d9d9;
+        border-radius: 10px;
+        margin-bottom: 19px;
+    }
+
+    .teamGrid {
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .teamPhoto img {
+        border-radius: 5px;
+    }
+
+    .teamDetail  :nth-child(1) {
+        font-size: 19px;
+    }
+
+    .teamDetail :nth-child(2) {
+        font-size: 15px;
+    }
+
     .teamcred {
-        font-size: 21px;
+        font-size: 15px;
     }
 
     .techCert {
-        font-size: 34px;
-        justify-content: left;
-        padding-left: 20px;
+        font-size: 28px;
     }
 }
 

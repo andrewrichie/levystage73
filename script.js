@@ -2,54 +2,13 @@ function initScrollImageStack(containerSelector) {
     const container = document.querySelector(containerSelector);
     if (!container) return;
 
-    let isScrolling = false;
     let currentIndex = 0;
     const images = Array.from(container.querySelectorAll(".image"));
     const maxIndex = images.length - 1;
+    let autoSwitchInterval = null;
 
     // Initial order
     reorderImages(currentIndex, images);
-
-    // SCROLL interaction (desktop / tablet)
-    function handleScroll(event) {
-        if (!container.matches(':hover')) return;
-
-        if (event.deltaY > 0) {
-            if (currentIndex < maxIndex) {
-                event.preventDefault();
-                if (isScrolling) return;
-                isScrolling = true;
-                currentIndex++;
-                reorderImages(currentIndex, images);
-                setTimeout(() => isScrolling = false, 1000);
-            }
-        } else if (event.deltaY < 0) {
-            if (currentIndex > 0) {
-                event.preventDefault();
-                if (isScrolling) return;
-                isScrolling = true;
-                currentIndex--;
-                reorderImages(currentIndex, images);
-                setTimeout(() => isScrolling = false, 500);
-            }
-        }
-    }
-
-    // Only attach scroll listener for screens wider than 768px
-    if (window.innerWidth > 768) {
-        container.addEventListener("wheel", handleScroll, { passive: false });
-    } else {
-        // Mobile: auto cycle
-        let autoScrollInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            reorderImages(currentIndex, images);
-        }, 2500); // change every 2.5s
-
-        // OPTIONAL: stop auto-switching on user touch
-        container.addEventListener("touchstart", () => {
-            clearInterval(autoScrollInterval);
-        }, { once: true });
-    }
 
     function reorderImages(index, images) {
         const ordered = [...images];
@@ -62,9 +21,42 @@ function initScrollImageStack(containerSelector) {
         if (rotated[1]) rotated[1].className = "image middle";
         if (rotated[2]) rotated[2].className = "image back";
     }
+
+    function startAutoSwitch(intervalTime = 1500) {
+        if (autoSwitchInterval) return; // avoid duplicate intervals
+        autoSwitchInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            reorderImages(currentIndex, images);
+        }, intervalTime);
+    }
+
+    function stopAutoSwitch() {
+        if (autoSwitchInterval) {
+            clearInterval(autoSwitchInterval);
+            autoSwitchInterval = null;
+        }
+    }
+
+    if (window.innerWidth < 768) {
+        // Auto cycle on small screens
+        startAutoSwitch();
+
+        // Optional: Stop on touch
+        container.addEventListener("touchstart", () => {
+            stopAutoSwitch();
+        }, { once: true });
+    } else {
+        // Hover-based cycle on larger screens
+        container.addEventListener("mouseenter", () => {
+            startAutoSwitch(1800); // slightly faster on hover
+        });
+
+        container.addEventListener("mouseleave", () => {
+            stopAutoSwitch();
+        });
+    }
 }
 initScrollImageStack(".image-stack");
-
 
 
 

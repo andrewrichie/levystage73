@@ -316,11 +316,12 @@ h3 {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 25px;
+        font-size: 19px;
     }
 
     h2 {
-        font-size: 21px;
+        font-size: 19px;
+        font-weight: 500;
     }
 
     h3 {
@@ -947,6 +948,15 @@ h3 {
     }
 }
 
+@media (max-width: 565px) {
+ 
+
+    .solutionsOffered p {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 
 
 .swiper-container {
@@ -1366,6 +1376,10 @@ h3 {
     border-radius: 15px;
 }
 
+.exp {
+    margin-left: 100px;
+}
+
 @media (max-width: 1300px) {
     .pressIndex {
         width: 1000px;
@@ -1397,6 +1411,10 @@ h3 {
         height: 245px;
     }
 
+    .exp {
+        margin-left: 30px;
+    }
+
 }
 
 @media  (max-width: 992px) {
@@ -1409,7 +1427,7 @@ h3 {
     }
 
     .exp {
-        margin-left: -50px;
+        margin-left: 10px;
     }
 
     .maskcon {
@@ -1436,18 +1454,20 @@ h3 {
     .pressIndex {
         width: 650px;
         height: 370px;
-        border: 15px solid #C1E3FF;
+        border: 7px solid #C1E3FF;
         padding: 10px !important;
     }
 
     .pressIndex_img {
         width: 400px;
+       
         gap: 10px !important;
         margin-left: 100px;
     }
 
     .pressIndex_img div {
         border-radius: 20px !important;
+       
     }
 
     .maskcon {
@@ -1473,8 +1493,13 @@ h3 {
     }
 
     .hrmaskc {
-        width: 219px;
-        height: 145px;
+        width: 249px;
+        height: 138px;
+        border-radius: 10px;
+        border: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -1704,6 +1729,7 @@ h3 {
     .tabuealink, .tabuealink_b {
         border-radius: 20px;
         padding: 12px 28px;
+        font-size: 15px;
     }
 }
 
@@ -1797,6 +1823,21 @@ h3 {
     background-color: #067ada;
 }
 
+@media (max-width: 768px) {
+    .ctaButtons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .myButtona {
+        padding: 7px 15px;
+        max-width: 250px;
+    }
+}
+
 @media (max-width: 568px) {
     .ctaButtons {
         display: flex;
@@ -1805,6 +1846,7 @@ h3 {
         gap: 10px;
         margin-bottom: 0;
     }
+
     .myButtona {
         padding: 5px 10px;
         font-size: 12px;
@@ -2874,11 +2916,16 @@ image-stack .image .active {
   }
   
   
-
+/* 
   .service-pager::-webkit-scrollbar {
     display: none;
-  }
+  } */
 
+  
+  .service-pager::-webkit-scrollbar-button {
+     display: none;
+     height: 0;
+  }
  
  
   .row{
