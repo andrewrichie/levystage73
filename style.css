@@ -1733,6 +1733,14 @@ h3 {
     }
 }
 
+@media (max-width: 568px) {
+    .tabuealink, .tabuealink_b {
+        border-radius: 20px;
+        padding: 12px 28px;
+        font-size: 9px;
+    }
+}
+
 .majorCta {
     display: flex;
     flex-direction: column;
