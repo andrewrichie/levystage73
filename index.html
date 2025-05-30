@@ -19,6 +19,7 @@
     />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
@@ -29,26 +30,29 @@
 
         <header>
             <img class="bigImg" src="levy img/high_empyrean_this_image_shows_an_interesting_abstract_art_desi_0efd0bd4-ef4e-446a-9b5d-d1f654000006 1.png">
-            <img class="levyLogo" src="levy img/Group 1000002904.png" >
+
+            <div class="top">
+                <img class="levyLogo" src="levy img/Group 1000002904.png" >
+
+
+                <div class="nav-wrapper">
+                    <nav class="vertical-nav">
+                        <ul class="ff-basic fs-400">
+                            <li class="nav-item active" data-target="home"><a href="index.html">Home</a></li>
+                            <li class="nav-item" data-target="about"><a href="aboutus.html">About</a></li>                            
+                            <li class="nav-item" data-target="blog"><a href="blog.html">Contact Us </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+         
+
+      
         </header>
     
     
-        <div class="nav-container">
-            <div class="hamburger" id="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          
-            <nav class="nav-menu" id="navMenu">
-              <ul>  
-                <li><a href="index.html">HOME</a></li>
-                <div class="divider"></div>
-                <li><a href="aboutus.html">ABOUT</a></li>
-              </ul>
-            </nav>
-        </div>
-
+    
+     
     </head>
 
   
@@ -136,81 +140,86 @@
 
                     
             <!-- new table of content  -->
-
+            
+                    <!-- WRAPPER -->
             <div class="section-scroll" style="position: relative;">
+                <!-- Fixed green vertical line -->
                 <div class="fixed-line"></div>
-
-            <section class="service-pager">
-
-            
-
-                <!-- =========== ROW 1 =========== -->
-                <div class="row">
-                <div class="label">
-                    <img class="labImg" src="levy img/auto.png" alt="">
-                    <p class="dataTop">Automate&nbsp;Your&nbsp;Data</p>
-                    <p class="datIfo">Transform data for self-service analytics</p>
+  
+                <!-- Custom fake scrollbar -->
+                <div class="custom-scrollbar">
+                  <div class="scroll-thumb"></div>
                 </div>
-                <div class="cards">
-                    <article class="card graen">
-                    <h4>Data Architecture</h4>
-                    <p class="datacoint">Design datasets with trusted patterns that balance performance and accessibility.</p>
-                    <a href="automatedata.html" target="_blank"><div class="grnbox">Learn More</div></a>
-                    </article>
-                    <article class="card graen">
-                    <h4>Data Engineering</h4>
-                    <p class="datacoint">Automate your data workflows using advanced processing tools that leverage the full scalability of the cloud.</p>
-                    <a href="automatedata.html" target="_blank"><div class="grnbox">Learn More</div></a>
-                    </article>
-                </div>
-                </div>
-            
-                <!-- =========== ROW 2 =========== -->
-                <div class="row">
-                <div class="label">
-                    <img class="labImg" src="levy img/enable.png" alt="">
-                    <p class="dataTop">Enable&nbsp;Data&nbsp;Culture</p>
-                    <p class="datIfo">Evolve the culture of your organization</p>
-                </div>
-                <div class="cards">
-                    <article class="card blue">
-                    <h4>Data Strategy</h4>
-                    <p class="datacoint">We design and implement a data analytics strategy and roadmap for insights.</p>
-                    <a href="enableculture.html" target="_blank"><div class="blubox">Learn More</div></a>
-                    </article>
-                    <article class="card blue">
-                    <h4>Data Governance</h4>
-                    <p class="datacoint">Implement data quality frameworks and security protocols tailored to adhere to any regulatory or company standards.</p>
-                    <a href="enableculture.html" target="_blank"><div class="blubox">Learn More</div></a>
-                    </article>
-                </div>
-                </div>
-            
-                <!-- =========== ROW 3 =========== -->
-                <div class="row">
-                <div class="label">
-                    <img class="labImg" src="levy img/insight.png" alt="">
-                    <p class="dataTop">Insight&nbsp;Generation</p>
-                    <p class="datIfo">Evolve the culture of your organization</p>
-                </div>
-                <div class="cards">
-                    <article class="card gold">
-                    <h4>Data Science</h4>
-                    <p class="datacoint">Maximize your data value by deriving information using trusted machine learning models and
-                        AI tools.</p>
-                    <a href="insigtgen.html" target="_blank"><div class="yelbox">Learn More</div></a>
-                    </article>
-                    <article class="card gold">
-                    <h4>Data Visualization</h4>
-                    <p class="datacoint">Translate data into insights efficiently and effectively driving business outcomes.</p>
-                    <a href="insigtgen.html" target="_blank"><div class="yelbox">Learn More</div></a>
-                    </article>
-                </div>
-                </div>
-            
-            </section>
-
-            </div>
+  
+                <!-- Scrollable section -->
+                <section class="service-pager" id="content">
+  
+                  <!-- ROW 1 -->
+                  <div class="row">
+                    <div class="label">
+                      <img class="labImg" src="levy img/auto.png" alt="">
+                      <p class="dataTop">Automate&nbsp;Your&nbsp;Data</p>
+                      <p class="datIfo">Transform data for self-service analytics</p>
+                    </div>
+                    <div class="cards">
+                      <article class="card graen">
+                        <h4 style="color: #06AA47;">Data Architecture</h4>
+                        <p class="datacoint">Design datasets with trusted patterns that balance performance and accessibility.</p>
+                        <a href="automatedata.html" target="_blank"><div class="grnbox">Learn More</div></a>
+                      </article>
+                      <article class="card graen">
+                        <h4 style="color: #06AA47;">Data Engineering</h4>
+                        <p class="datacoint">Automate your data workflows using advanced processing tools that leverage the full scalability of the cloud.</p>
+                        <a href="automatedata.html" target="_blank"><div class="grnbox">Learn More</div></a>
+                      </article>
+                    </div>
+                  </div>
+  
+                  <!-- ROW 2 -->
+                  <div class="row">
+                    <div class="label">
+                      <img class="labImg" src="levy img/enable.png" alt="">
+                      <p class="dataTop">Enable&nbsp;Data&nbsp;Culture</p>
+                      <p class="datIfo">Evolve the culture of your organization</p>
+                    </div>
+                    <div class="cards">
+                      <article class="card blue">
+                        <h4 style="color: #2188fe;">Data Strategy</h4>
+                        <p class="datacoint">We design and implement a data analytics strategy and roadmap for insights.</p>
+                        <a href="enableculture.html" target="_blank"><div class="blubox">Learn More</div></a>
+                      </article>
+                      <article class="card blue">
+                        <h4 style="color: #2188fe;">Data Governance</h4>
+                        <p class="datacoint">Implement data quality frameworks and security protocols tailored to adhere to any regulatory or company standards.</p>
+                        <a href="enableculture.html" target="_blank"><div class="blubox">Learn More</div></a>
+                      </article>
+                    </div>
+                  </div>
+  
+                  <!-- ROW 3 -->
+                  <div class="row">
+                    <div class="label">
+                      <img class="labImg" src="levy img/insight.png" alt="">
+                      <p class="dataTop">Insight&nbsp;Generation</p>
+                      <p class="datIfo">Evolve the culture of your organization</p>
+                    </div>
+                    <div class="cards">
+                      <article class="card gold">
+                        <h4 style="color: #ffb804;">Data Science</h4>
+                        <p class="datacoint">Maximize your data value by deriving information using trusted machine learning models and AI tools.</p>
+                        <a href="insigtgen.html" target="_blank"><div class="yelbox">Learn More</div></a>
+                      </article>
+                      <article class="card gold">
+                        <h4 style="color: #ffb804;">Data Visualization</h4>
+                        <p class="datacoint">Translate data into insights efficiently and effectively driving business outcomes.</p>
+                        <a href="insigtgen.html" target="_blank"><div class="yelbox">Learn More</div></a>
+                      </article>
+                    </div>
+                  </div>
+  
+                </section>
+              </div>
+  
 
             <!-- ends here -->
             
@@ -386,7 +395,7 @@
 
             <section class="greenSolution">
                 <section class="solutionsOffered">
-                    <p class="ff-basic">SOLUTIONS WE PROFER</p>
+                    <p class="ff-basic">SOLUTIONS WE PROFFER</p>
                 </section>           
 
             
@@ -464,6 +473,45 @@
                 </p>
             </section>
 
+        <section class="forstat">
+                
+
+            <div class="techCert animation_section">
+                <p>
+                    Technical Certifications
+                </p>
+            </div>
+
+               <!-- Stats Section HTML -->
+               <div class="the-stats">
+                <div class="stats animation_section">
+                  <img src="levy img/image 25.png" alt="Icon1" class="icon1">
+                  <div class="statsFlex">
+                    <div class="number ff-basic" data-start="0" data-end="3">0+</div>
+                    <p class="description">Happy Clients</p>
+                  </div>
+                </div>
+  
+                <div class="stats animation_section">
+                  <img src="levy img/image (11).png" alt="Icon2" class="icon2">
+                  <div class="statsFlex">
+                    <div class="number ff-basic" data-start="0" data-end="225">0+</div>
+                    <p class="description">Dashboards Made</p>
+                  </div>
+                </div>
+  
+                <div class="stats animation_section">
+                  <img src="levy img/image (12).png" alt="Icon3" class="icon3">
+                  <div class="statsFlex">
+                    <div class="number ff-basic" data-start="0" data-end="25">0+</div>
+                    <p class="description">Data Viz Awards</p>
+                  </div>
+                </div>
+              </div>
+  
+    
+        </section>
+
             <section class="pressFreedom">
 
                 <div class="pressIndex ff-primary">
@@ -479,7 +527,7 @@
                 </div>
 
                 <div class="pressFreedom_cta ff-basic">
-                    <a class="tabuealink" href="https://public.tableau.com/app/profile/levyanalytics/vizzes" target="_blank">
+                    <a class="tabuealink_b" href="https://public.tableau.com/app/profile/levyanalytics/vizzes" target="_blank">
                         Visit Our Tableau Public
                     </a>
                     <a class="tabuealink_b" href="https://www.novypro.com/manage_projects/levy-analytics" target="_blank">
@@ -519,21 +567,35 @@
                
                 <div class="levyFooter_info">
                     <div>
-                        <a><p class="ressb">About</p></a>
-                        <a><p class="ressb">Services</p></a>
+                        <a class="fotlink" href="aboutus.html"><p class="ressb">About</p></a>
+                        <a class="fotlink"><p class="ressb">Services</p></a>
                         <div class="levylink">
-                            <img src="levy img/in.png">
-                            <img src="levy img/pngegg 1.png">
-                            <img src="levy img/tabulea.png">
-                            <img src="levy img/youtube.png">
-                            <img src="levy img/gmail.png">
+                            <a class="icunn" href="https://www.linkedin.com/company/levyanalytics/posts/?feedView=all" target="_blank">
+                                <img src="levy img/in.png">
+                            </a>
+
+                            <a class="icunn" href="https://www.novypro.com/manage_projects/levy-analytics" target="_blank">
+                                <img src="levy img/pngegg 1.png">
+                            </a>
+                            
+                            <a class="icunn" href="https://public.tableau.com/app/profile/levyanalytics/vizzes" target="_blank">
+                                <img src="levy img/tabulea.png">
+                            </a>
+                            
+                            <a class="icunn" href="" target="_blank">
+                                <img src="levy img/youtube.png">
+                            </a>
+                            
+                            <a class="icunn" href="mailto:alex@levyanalytics.com" target="_blank">
+                                <img src="levy img/gmmm.png">
+                            </a>
                         </div>
                     </div>
 
                     <div>
                         <p class="ress">RESOURCES</p>
-                        <p class="ressb">Power BI </p>
-                        <p class="ressb"> Tableau Public</p>
+                        <a class="icunn2" href="https://www.novypro.com/manage_projects/levy-analytics" target="_blank"><p class="ressb">Power BI </p></a>
+                        <a class="icunn2" href="https://public.tableau.com/app/profile/levyanalytics/vizzes" target="_blank"><p class="ressb"> Tableau Public</p></a>
                         <p class="ressb">YouTube</p>
                     </div>
                 </div>
@@ -572,10 +634,89 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+ 
+
+          <!-- SCROLL SYNC JS -->
+        <script>
+
+            
+
+
+    
+            const content = document.querySelector('.service-pager');
+            const thumb = document.querySelector('.scroll-thumb');
+            const scrollbar = document.querySelector('.custom-scrollbar');
+
+            function updateThumb() {
+              const contentHeight = content.scrollHeight;
+              const visibleHeight = content.clientHeight;
+              const scrollTop = content.scrollTop;
+
+              const scrollbarHeight = scrollbar.offsetHeight;
+              const thumbHeight = (visibleHeight / contentHeight) * scrollbarHeight;
+              const thumbTop = (scrollTop / contentHeight) * scrollbarHeight;
+
+              thumb.style.height = `${thumbHeight}px`;
+              thumb.style.top = `${thumbTop}px`;
+            }
+
+            content.addEventListener('scroll', updateThumb);
+            window.addEventListener('resize', updateThumb);
+            window.addEventListener('load', updateThumb);
+
+
+
+
+
+
+
+
+            document.addEventListener("DOMContentLoaded", function () {
+                    const numberElements = document.querySelectorAll('.number');
+
+                    if (numberElements.length === 0) return;
+
+                    const numberObserver = new IntersectionObserver((entries, observer) => {
+                      entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                          const el = entry.target;
+                          const start = parseInt(el.dataset.start, 10);
+                          const end = parseInt(el.dataset.end, 10);
+                          const duration = 1500;
+                          const steps = Math.floor(duration / 30);
+                          const increment = (end - start) / steps;
+
+                          let current = start;
+                          let count = 0;
+
+                          const timer = setInterval(() => {
+                            current += increment;
+                            count++;
+                            el.textContent = Math.floor(current) + "+";
+                            if (count >= steps) {
+                              el.textContent = end + "+";
+                              clearInterval(timer);
+                            }
+                          }, 30);
+
+                          observer.unobserve(el);
+                        }
+                      });
+                    }, {
+                      threshold: 0.6
+                    });
+
+                    numberElements.forEach(el => numberObserver.observe(el));
+                  });
+
+
+       
+        </script>
+
+    
     <script src="script.js"></script>
-
-
-  
 
 </body>
 </html>

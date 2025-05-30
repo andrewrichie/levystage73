@@ -4,6 +4,16 @@
     align-items: center;
 }
 
+.subbody {
+    margin-top: -200px;
+}
+
+@media (max-width: 768px) {
+    .subbody {
+        margin-top: -10px;
+    }
+}
+
 
 
 .dataArch {

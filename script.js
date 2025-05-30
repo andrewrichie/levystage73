@@ -154,21 +154,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// window.addEventListener("scroll", function () {
-//     let line = document.querySelector(".toc-line");
-//     let scrollPosition = window.scrollY; // Current scroll position
-//     let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-//     let scrollPercent = scrollPosition / maxScroll; // Scroll progress (0 to 1)
-
-//     // Define color transitions
-//     if (scrollPercent < 0.33) {
-//     line.style.background = "#03712E"; // Top color
-//     } else if (scrollPercent < 0.66) {
-//     line.style.background = "#0466D6"; // Middle color
-//     } else {
-//     line.style.background = "#C38C01"; // Bottom color
-//     }
-// });
 
 
 
@@ -263,3 +248,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 
   document.querySelectorAll('.row').forEach(row => observer.observe(row));
+
+
+
+
+  
+   

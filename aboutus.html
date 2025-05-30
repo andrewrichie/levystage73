@@ -12,28 +12,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="aboutheaddiv">
-        <img class="headbackground" src="levy img/Mask group (1).png">
-        <p class="aboutHead ff-basic ">About Us</p>
-    </div>
 
-    <div class="nav-container">
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+    
+    <header>
+        <img class="headbackground" src="levy img/Mask group (1).png">
+
+        <div class="top">
+            <img class="levyLogo" src="levy img/Group 1000002904.png" >
+
+
+            <div class="nav-wrapper">
+                <nav class="vertical-nav">
+                    <ul class="ff-basic fs-400">
+                        <li class="nav-item" data-target="home"><a href="index.html">Home</a></li>
+                        <li class="nav-item active" data-target="about"><a href="aboutus.html">About</a></li>                            
+                        <li class="nav-item" data-target="blog"><a href="blog.html">Contact Us </a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      
-        <nav class="nav-menu" id="navMenu">
-          <ul>  
-            <li><a href="index.html">HOME</a></li>
-            <div class="divider"></div>
-            <li><a href="aboutus.html">ABOUT</a></li>
-          </ul>
-        </nav>
-    </div>
+     
+            <div class="aboutheaddiv">
+                
+                    <p class="aboutHead ff-basic ">About Us</p>
+            </div>
+
+  
+    </header>
     
 
+   
+    
    
 
     <section class="whyLevy container animation_section">
@@ -236,7 +245,7 @@
                             <img src="levy img/pngegg 1.png">
                             <img src="levy img/tabulea.png">
                             <img src="levy img/youtube.png">
-                            <img src="levy img/gmail.png">
+                            <img src="levy img/gmmm.png">
                         </div>
                     </div>
 
@@ -282,45 +291,44 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    
+
     <script>
-        
+                 
 
-        function animateNumbers(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    let numberElement = entry.target;
-                    let start = parseInt(numberElement.getAttribute('data-start'));
-                    let end = parseInt(numberElement.getAttribute('data-end'));
-                    let duration = 1500;
-                    let interval = 50;
-                    let steps = duration / interval;
-                    let increment = (end - start) / steps;
-                    let currentValue = start;
 
-                    let counter = setInterval(() => {
-                        currentValue += increment;
-                        if (currentValue >= end) {
+                document.addEventListener("DOMContentLoaded", () => {
+                    function animateNumbers(entries, observer) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                        let numberElement = entry.target;
+                        let start = parseInt(numberElement.getAttribute('data-start'));
+                        let end = parseInt(numberElement.getAttribute('data-end'));
+                        let duration = 1500;
+                        let interval = 50;
+                        let steps = duration / interval;
+                        let increment = (end - start) / steps;
+                        let currentValue = start;
+
+                        let counter = setInterval(() => {
+                            currentValue += increment;
+                            if (currentValue >= end) {
                             clearInterval(counter);
                             currentValue = end;
+                            }
+                            numberElement.textContent = Math.floor(currentValue) + "+";
+                        }, interval);
+
+                        observer.unobserve(numberElement);
                         }
-                        numberElement.textContent = Math.floor(currentValue) + "+";
-                    }, interval);
+                    });
+                    }
 
-                    observer.unobserve(numberElement);
-                }
-            });
-        }
+                    const numberObserver = new IntersectionObserver(animateNumbers, { threshold: 0.5 });
 
-        let observer = new IntersectionObserver(animateNumbers, { threshold: 0.5 });
-        document.querySelectorAll('.number').forEach(el => observer.observe(el));
+                    document.querySelectorAll('.number').forEach(el => numberObserver.observe(el));
+                });
 
-
-
-
-    
-        
-
+       
     </script>
     
     <script src="script.js"></script>
