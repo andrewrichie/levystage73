@@ -726,7 +726,7 @@ h3 {
 @media (max-width: 568px) {
     .effAnalytics {
         font-size: 24px;
-        
+        margin-bottom: 20px;
     }
 }
 
@@ -753,6 +753,10 @@ h3 {
 @media (max-width: 565px) {
     .indSer {
         font-size: 12px;
+    }
+
+    .idussection {
+        margin-top: 120px;
     }
 }
 
@@ -2133,7 +2137,7 @@ footer {
     }
 
     .footer_column {
-        gap: 50px;
+        gap: 0px;
     }
 
     .info-stack {
@@ -3099,6 +3103,12 @@ image-stack .image .active {
     .custom-scrollbar {
       left: 140px
     }
+
+    .fixed-line {
+        height: 250px;
+    }
+
+   
 
   }
   
